@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 560" width="1240" height="560" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="The screening pipeline">
+<title>The screening pipeline</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="560" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">The screening pipeline</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Every GPU job, from any agent or the TPE study, took the same path.</text>
+<rect x="20" y="80" width="250" height="330" rx="12" fill="none" stroke="#C9D1DB" stroke-width="1.2" stroke-dasharray="5 4" opacity="1"/>
+<text x="34" y="100" font-size="11" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">MY PC: ORCHESTRATION ONLY</text>
+<rect x="290" y="80" width="250" height="330" rx="12" fill="none" stroke="#C9D1DB" stroke-width="1.2" stroke-dasharray="5 4" opacity="1"/>
+<text x="304" y="100" font-size="11" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">RENTED CPU BOXES</text>
+<rect x="560" y="80" width="330" height="330" rx="12" fill="none" stroke="#C9D1DB" stroke-width="1.2" stroke-dasharray="5 4" opacity="1"/>
+<text x="574" y="100" font-size="11" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">RENTED H200 BOXES</text>
+<rect x="910" y="80" width="310" height="460" rx="12" fill="none" stroke="#C9D1DB" stroke-width="1.2" stroke-dasharray="5 4" opacity="1"/>
+<text x="924" y="100" font-size="11" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">PROMOTION AND THE JUDGE</text>
+<rect x="40" y="112" width="210" height="74" rx="8" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="40" y="112" width="5" height="74" rx="2.5" fill="#7C5CC4"/>
+<text x="147.0" y="145.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Expert agents</text>
+<text x="147.0" y="164.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">one per kernel family</text>
+<rect x="40" y="202" width="210" height="74" rx="8" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="40" y="202" width="5" height="74" rx="2.5" fill="#7C5CC4"/>
+<text x="147.0" y="235.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">TPE study</text>
+<text x="147.0" y="254.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">Optuna, per-case switches</text>
+<rect x="40" y="300" width="210" height="92" rx="8" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="40" y="300" width="5" height="92" rx="2.5" fill="#E0A030"/>
+<text x="147.0" y="333.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">submit.py + relay</text>
+<text x="147.0" y="352.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">priority 0 (controls) to 4 (TPE)</text>
+<text x="147.0" y="369.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">one job per name</text>
+<path d="M145,186 L145,202" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<path d="M145,276 L145,300" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="310" y="160" width="210" height="120" rx="8" fill="#FBEAED" stroke="#D1495B" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="310" y="160" width="5" height="120" rx="2.5" fill="#D1495B"/>
+<text x="417.0" y="189.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Build modules</text>
+<text x="417.0" y="208.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">~17 CUDA modules per file</text>
+<text x="417.0" y="225.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">~53 for a per-case file</text>
+<text x="417.0" y="242.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">judge&#x27;s exact flags</text>
+<text x="417.0" y="259.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">ccache, no GPU</text>
+<path d="M250,346 L280,346 L280,220 L310,220" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<text x="282" y="335" font-size="11.5" fill="#5B6573" font-weight="500" text-anchor="middle" opacity="1">queued</text>
+<rect x="580" y="112" width="290" height="96" rx="8" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="580" y="112" width="5" height="96" rx="2.5" fill="#1F9AA8"/>
+<text x="727.0" y="138.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Bench server per slot</text>
+<text x="727.0" y="157.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">2 runners per GPU</text>
+<text x="727.0" y="174.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">inputs cached in pinned host memory</text>
+<text x="727.0" y="191.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">production prepared once</text>
+<rect x="580" y="228" width="290" height="74" rx="8" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="580" y="228" width="5" height="74" rx="2.5" fill="#1F9AA8"/>
+<text x="727.0" y="261.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">okc_harness.py timing</text>
+<text x="727.0" y="280.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">CUDA graph, cold L2, paired, median</text>
+<rect x="580" y="322" width="290" height="70" rx="8" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="580" y="322" width="5" height="70" rx="2.5" fill="#1F9AA8"/>
+<text x="727.0" y="353.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Telemetry</text>
+<text x="727.0" y="372.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">1 s power / clock / util log</text>
+<path d="M520,200 L580,160" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<text x="552" y="200" font-size="11.5" fill="#5B6573" font-weight="500" text-anchor="middle" opacity="1">.so files</text>
+<path d="M725,208 L725,228" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="930" y="112" width="270" height="74" rx="8" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="930" y="112" width="5" height="74" rx="2.5" fill="#2F6FDE"/>
+<text x="1067.0" y="145.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Screen</text>
+<text x="1067.0" y="164.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">200 reps vs the incumbent&#x27;s reading</text>
+<rect x="930" y="206" width="270" height="74" rx="8" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="930" y="206" width="5" height="74" rx="2.5" fill="#2A9D6F"/>
+<text x="1067.0" y="239.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Confirm</text>
+<text x="1067.0" y="258.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">400 reps, full checks</text>
+<rect x="930" y="300" width="270" height="74" rx="8" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="930" y="300" width="5" height="74" rx="2.5" fill="#2A9D6F"/>
+<text x="1067.0" y="333.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Bundle and stack</text>
+<text x="1067.0" y="352.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">confirm the bundle again</text>
+<rect x="930" y="394" width="270" height="92" rx="8" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="930" y="394" width="5" height="92" rx="2.5" fill="#2A9D6F"/>
+<text x="1067.0" y="427.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Validate and review</text>
+<text x="1067.0" y="446.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">cold prepare under 300 s, 13 tests,</text>
+<text x="1067.0" y="463.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">52 nearby shapes, 12 × 200 soak</text>
+<path d="M870,265 L900,265 L900,149 L930,149" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<path d="M1065,186 L1065,206" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<text x="1100" y="200" font-size="11.5" fill="#5B6573" font-weight="500" text-anchor="middle" opacity="1">ahead</text>
+<path d="M1065,280 L1065,300" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<text x="1100" y="294" font-size="11.5" fill="#5B6573" font-weight="500" text-anchor="middle" opacity="1">confirmed</text>
+<path d="M1065,374 L1065,394" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="560" y="450" width="330" height="74" rx="8" fill="#FBEAED" stroke="#D1495B" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="560" y="450" width="5" height="74" rx="2.5" fill="#D1495B"/>
+<text x="727.0" y="483.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">okc submit: the judge&#x27;s H200</text>
+<text x="727.0" y="502.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">per-case table and per-kernel profile</text>
+<path d="M930,470 L890,487" fill="none" stroke="#D1495B" stroke-width="1.6" marker-end="url(#arr-red)" stroke-linejoin="round"/>
+<path d="M560,487 L145,487 L145,392" fill="none" stroke="#D1495B" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arr-red)" stroke-linejoin="round"/>
+<text x="350" y="478" font-size="11.5" fill="#5B6573" font-weight="500" text-anchor="middle" opacity="1">profiles and scores feed the next ideas</text>
+</svg>

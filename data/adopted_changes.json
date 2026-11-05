@@ -1,0 +1,1235 @@
+{
+ "switches": {
+  "sk2bf16p": 1,
+  "wsblk_t2": 1,
+  "wsblk_m1": 1,
+  "dfpoll": 1,
+  "ts2": 1,
+  "spoll2": 0,
+  "sdef": 0,
+  "mid16": 0,
+  "sk2c7": 0,
+  "rqc7": 0,
+  "p05": 1,
+  "dlc_att": "ca",
+  "dlc_moes": "ca",
+  "dlc_moew": "none",
+  "dlc_rq": "none",
+  "dlc_sk2": "ca",
+  "rul_att": 7,
+  "rul_rq": 5,
+  "sc6s": 1,
+  "rq_o": 1
+ },
+ "raw": [
+  [
+   "moe_d1s",
+   "-DMOE_RAFN=1"
+  ],
+  [
+   "moe_d1f",
+   "-DMOE_RAFN=1"
+  ],
+  [
+   "moe_v1s",
+   "-DMOE_RAFN=1"
+  ],
+  [
+   "moe_v1f",
+   "-DMOE_RAFN=1"
+  ],
+  [
+   "moe_d16s",
+   "-DMOE_RAFN=1"
+  ],
+  [
+   "moe_d16f",
+   "-DMOE_RAFN=1"
+  ],
+  [
+   "moe_d1s",
+   "-DMOE_XSLOT=2"
+  ],
+  [
+   "moe_d1f",
+   "-DMOE_XSLOT=2"
+  ],
+  [
+   "moe_d1s",
+   "-DMOE_HCRED=3"
+  ],
+  [
+   "moe_d1f",
+   "-DMOE_HCRED=3"
+  ],
+  [
+   "moe_v1s",
+   "-DMOE_HCRED=3"
+  ],
+  [
+   "moe_v1f",
+   "-DMOE_HCRED=3"
+  ],
+  [
+   "moe_d16s",
+   "-DMOE_HCRED=3"
+  ],
+  [
+   "moe_d16f",
+   "-DMOE_HCRED=3"
+  ],
+  [
+   "moe_big",
+   "-DMOE_PLD=1"
+  ],
+  [
+   "moe_d16f",
+   "-DMOE_PLD=1"
+  ],
+  [
+   "moe_d16s",
+   "-DMOE_PLD=1"
+  ],
+  [
+   "moe_d1f",
+   "-DMOE_PLD=1"
+  ],
+  [
+   "moe_d1s",
+   "-DMOE_PLD=1"
+  ],
+  [
+   "moe_d32f",
+   "-DMOE_PLD=1"
+  ],
+  [
+   "moe_d32s",
+   "-DMOE_PLD=1"
+  ],
+  [
+   "moe_v1f",
+   "-DMOE_PLD=1"
+  ],
+  [
+   "moe_v1s",
+   "-DMOE_PLD=1"
+  ],
+  [
+   "moe_d1s",
+   "-DMOE_IWARP=1"
+  ],
+  [
+   "moe_d1f",
+   "-DMOE_IWARP=1"
+  ],
+  [
+   "moe_v1f",
+   "-DMOE_IWARP=1"
+  ],
+  [
+   "moe_v1s",
+   "-DMOE_IWARP=1"
+  ],
+  [
+   "moe_d16s",
+   "-DMOE_IWARP=1"
+  ],
+  [
+   "moe_d16f",
+   "-DMOE_IWARP=1"
+  ],
+  [
+   "moe_d1s",
+   "-DMOE_ITAIL=1"
+  ],
+  [
+   "moe_d1f",
+   "-DMOE_ITAIL=1"
+  ],
+  [
+   "moe_v1s",
+   "-DMOE_ITAIL=1"
+  ],
+  [
+   "moe_v1f",
+   "-DMOE_ITAIL=1"
+  ],
+  [
+   "moe_d16s",
+   "-DMOE_ITAIL=1"
+  ],
+  [
+   "moe_d16f",
+   "-DMOE_ITAIL=1"
+  ],
+  [
+   "moe_d16s",
+   "-DMOE_ITAIL=0"
+  ],
+  [
+   "moe_d16f",
+   "-DMOE_ITAIL=0"
+  ],
+  [
+   "moe_d32s",
+   "-DMOE_CA=9"
+  ],
+  [
+   "sk2",
+   "-DSK2_RRED=1"
+  ],
+  [
+   "moe_d1s",
+   "-DMOE_ROUTE1=1"
+  ],
+  [
+   "moe_d1f",
+   "-DMOE_ROUTE1=1"
+  ],
+  [
+   "sk2",
+   "-DSK2_ESPL=1"
+  ],
+  [
+   "moe_d1s",
+   "-DMOE_FNSBAL=1"
+  ],
+  [
+   "moe_d1f",
+   "-DMOE_FNSBAL=1"
+  ],
+  [
+   "moe_v1s",
+   "-DMOE_FNSBAL=1"
+  ],
+  [
+   "moe_v1f",
+   "-DMOE_FNSBAL=1"
+  ],
+  [
+   "attention",
+   "-DATT_EPOCH_ASYNC=1"
+  ],
+  [
+   "moe_d1s",
+   "-DMOE_ROLEUNI=1"
+  ],
+  [
+   "moe_d1f",
+   "-DMOE_ROLEUNI=1"
+  ],
+  [
+   "moe_v1s",
+   "-DMOE_ROLEUNI=1"
+  ],
+  [
+   "moe_v1f",
+   "-DMOE_ROLEUNI=1"
+  ],
+  [
+   "moe_d16s",
+   "-DMOE_ROLEUNI=1"
+  ],
+  [
+   "moe_d16f",
+   "-DMOE_ROLEUNI=1"
+  ],
+  [
+   "glue_router",
+   "-DGLUE_RMOM=1"
+  ],
+  [
+   "attention",
+   "-DATT_V8_QDIR=1"
+  ],
+  [
+   "attention",
+   "-DATT_V8C_BF16RED=1"
+  ],
+  [
+   "attention",
+   "-DATT_VERIFY_WST=1"
+  ],
+  [
+   "attention",
+   "-DATT_V8_SCHEXP=1"
+  ],
+  [
+   "glue",
+   "-DGLUE_B1_ROWS=32"
+  ],
+  [
+   "glue",
+   "-DGLUE_B2_ROWS=8"
+  ],
+  [
+   "moe_d32s",
+   "-DMOE_CA=2"
+  ],
+  [
+   "sk2",
+   "-DSK2_RSUM=1"
+  ],
+  [
+   "sk2_gle",
+   "-DSK2_RSUM=1"
+  ],
+  [
+   "moe_big",
+   "-DMOE_YKEEP=1"
+  ],
+  [
+   "attention",
+   "-DATT_V1_GATE_EARLY=1"
+  ],
+  [
+   "moe_d32f",
+   "-DMOE_CA=7"
+  ],
+  [
+   "attention",
+   "-DATT_V1_GATE_EARLY=2"
+  ],
+  [
+   "attention",
+   "-DATT_V8F_SCHEXP=1"
+  ],
+  [
+   "sk2",
+   "-DSK2_XR=3"
+  ],
+  [
+   "sk2",
+   "-DSK2_XRM=2"
+  ],
+  [
+   "attention",
+   "-DATT_V1_POLL_NS=0"
+  ],
+  [
+   "attention",
+   "-DATT_V1_BF16RED=1"
+  ],
+  [
+   "glue",
+   "-DGLUE_STAS=1"
+  ],
+  [
+   "glue_router",
+   "-DGLUE_STAS=1"
+  ],
+  [
+   "attention",
+   "-DATT_V1_CTA_BARRIER=1"
+  ],
+  [
+   "attention",
+   "-DATT_V8_OVL=1"
+  ],
+  [
+   "attention",
+   "-DATT_V1_RELAXED_POLL=1"
+  ]
+ ],
+ "commits": [
+  "0421881",
+  "0fbc49a",
+  "11a5fa9",
+  "1e15e1d",
+  "236c203",
+  "24ec744",
+  "261cb4a",
+  "2a9aab8",
+  "2ed6d5b",
+  "318e36d",
+  "3dd3d23",
+  "4d4aa6f",
+  "4dbee12",
+  "522af6f",
+  "57bb930",
+  "5cd1853",
+  "6681768",
+  "809c53b",
+  "882f6ed",
+  "9cb4379",
+  "a3ed237",
+  "a55b473",
+  "af1ff9c",
+  "b0b7b87",
+  "b50f519",
+  "b9c06c3",
+  "c03f682",
+  "c14a33c",
+  "cbde96e",
+  "cd1fbf5",
+  "ce3c807",
+  "cedc49d",
+  "cfd3e67",
+  "dae2ef0",
+  "de87a12",
+  "e162300",
+  "e278980",
+  "eb6bc28",
+  "ef621f7",
+  "f9bf082",
+  "fb94814"
+ ],
+ "history": [
+  {
+   "seed": "dbt_h1's values of every switch a lane set today (wf_bf16p, stk_s8, unw_spoll2, wf_sdef, hk_m16j); sk2c7 / rqc7 / p05 as in dbt_h1 (its per-case dispatch carries them); the lane commits adopted today",
+   "t": 1793791672
+  },
+  {
+   "name": "inc_readd",
+   "run": "cf947_inc_readd",
+   "switches": {
+    "wsblk_t2": 1,
+    "dfpoll": 1
+   },
+   "raw": [],
+   "commit": "de87a12",
+   "t": 1793792376
+  },
+  {
+   "name": "wf_rafn_inc",
+   "run": "cf954_wf_rafn_inc",
+   "switches": {},
+   "raw": [
+    [
+     "moe_d1s",
+     "-DMOE_RAFN=1"
+    ],
+    [
+     "moe_d1f",
+     "-DMOE_RAFN=1"
+    ],
+    [
+     "moe_v1s",
+     "-DMOE_RAFN=1"
+    ],
+    [
+     "moe_v1f",
+     "-DMOE_RAFN=1"
+    ],
+    [
+     "moe_d16s",
+     "-DMOE_RAFN=1"
+    ],
+    [
+     "moe_d16f",
+     "-DMOE_RAFN=1"
+    ]
+   ],
+   "commit": "2a9aab8",
+   "t": 1793793786
+  },
+  {
+   "name": "st_3342",
+   "run": "cf955_st_3342",
+   "switches": {
+    "dlc_att": "ca",
+    "dlc_moes": "ca",
+    "dlc_moew": "none",
+    "dlc_rq": "none",
+    "dlc_sk2": "ca",
+    "rul_att": 7,
+    "rul_rq": 5,
+    "spoll2": 0
+   },
+   "raw": [],
+   "commit": "2a9aab8",
+   "t": 1793794378
+  },
+  {
+   "name": "composite2",
+   "run": "cf961_composite2",
+   "switches": {},
+   "raw": [],
+   "commit": "11a5fa9",
+   "t": 1793794929,
+   "per_case": {
+    "d32s": {
+     "rul_moew": 3,
+     "rul_sk2": 5
+    },
+    "d32f": {
+     "rul_sk2": 5
+    },
+    "v32s": {
+     "rul_rq": 3
+    },
+    "v32f": {
+     "rul_att": 7
+    }
+   }
+  },
+  {
+   "name": "comp2_readd",
+   "run": "cf967_comp2_readd",
+   "switches": {},
+   "raw": [],
+   "per_case": null,
+   "commit": "11a5fa9",
+   "t": 1793795572
+  },
+  {
+   "name": "wf_xslot2",
+   "run": "cf972_wf_xslot2",
+   "switches": {},
+   "raw": [
+    [
+     "moe_d1s",
+     "-DMOE_XSLOT=2"
+    ],
+    [
+     "moe_d1f",
+     "-DMOE_XSLOT=2"
+    ]
+   ],
+   "per_case": null,
+   "commit": "a3ed237",
+   "t": 1793797960
+  },
+  {
+   "name": "wf_sc6s",
+   "run": "cf973_wf_sc6s",
+   "switches": {
+    "sc6s": 1
+   },
+   "raw": [],
+   "per_case": null,
+   "commit": "236c203",
+   "t": 1793799573
+  },
+  {
+   "name": "wf_hcred3b",
+   "run": "cf976_wf_hcred3b",
+   "switches": {},
+   "raw": [
+    [
+     "moe_d1s",
+     "-DMOE_HCRED=3"
+    ],
+    [
+     "moe_d1f",
+     "-DMOE_HCRED=3"
+    ],
+    [
+     "moe_v1s",
+     "-DMOE_HCRED=3"
+    ],
+    [
+     "moe_v1f",
+     "-DMOE_HCRED=3"
+    ],
+    [
+     "moe_d16s",
+     "-DMOE_HCRED=3"
+    ],
+    [
+     "moe_d16f",
+     "-DMOE_HCRED=3"
+    ]
+   ],
+   "per_case": null,
+   "commit": "57bb930",
+   "t": 1793801191
+  },
+  {
+   "name": "coh_a",
+   "run": "cf978_coh_a",
+   "switches": {},
+   "raw": [],
+   "per_case": null,
+   "commit": "eb6bc28",
+   "t": 1793802935
+  },
+  {
+   "name": "wf_pld2",
+   "run": "cf980_wf_pld2",
+   "switches": {},
+   "raw": [
+    [
+     "moe_big",
+     "-DMOE_PLD=1"
+    ],
+    [
+     "moe_d16f",
+     "-DMOE_PLD=1"
+    ],
+    [
+     "moe_d16s",
+     "-DMOE_PLD=1"
+    ],
+    [
+     "moe_d1f",
+     "-DMOE_PLD=1"
+    ],
+    [
+     "moe_d1s",
+     "-DMOE_PLD=1"
+    ],
+    [
+     "moe_d32f",
+     "-DMOE_PLD=1"
+    ],
+    [
+     "moe_d32s",
+     "-DMOE_PLD=1"
+    ],
+    [
+     "moe_v1f",
+     "-DMOE_PLD=1"
+    ],
+    [
+     "moe_v1s",
+     "-DMOE_PLD=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "f9bf082",
+   "t": 1793803434
+  },
+  {
+   "name": "dbt_trim",
+   "run": "cf981_dbt_trim",
+   "switches": {},
+   "raw": [],
+   "per_case": null,
+   "commit": "9cb4379",
+   "t": 1793804337
+  },
+  {
+   "name": "pc2",
+   "run": "cf982_pc2",
+   "switches": {},
+   "raw": [],
+   "per_case": {
+    "d1f": {
+     "rul_sk2": 5
+    }
+   },
+   "commit": "9cb4379",
+   "t": 1793806677
+  },
+  {
+   "name": "pc3",
+   "run": "cf983_pc3",
+   "switches": {},
+   "raw": [],
+   "per_case": {
+    "d16s": {
+     "dlc_sk2": "cg"
+    }
+   },
+   "commit": "c03f682",
+   "t": 1793807643
+  },
+  {
+   "name": "pc4",
+   "run": "cf984_pc4",
+   "switches": {},
+   "raw": [],
+   "per_case": {
+    "v1f": {
+     "rul_sk2": 3
+    }
+   },
+   "commit": "e162300",
+   "t": 1793810469
+  },
+  {
+   "name": "pc5",
+   "run": "cf985_pc5",
+   "switches": {},
+   "raw": [],
+   "per_case": {
+    "d16f": {
+     "sk2c7": 1
+    }
+   },
+   "commit": "e162300",
+   "t": 1793811450
+  },
+  {
+   "name": "wf_iwarp2",
+   "run": "cf987_wf_iwarp2",
+   "switches": {},
+   "raw": [
+    [
+     "moe_d1s",
+     "-DMOE_IWARP=1"
+    ],
+    [
+     "moe_d1f",
+     "-DMOE_IWARP=1"
+    ],
+    [
+     "moe_v1f",
+     "-DMOE_IWARP=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "3dd3d23",
+   "t": 1793815827
+  },
+  {
+   "name": "wf_elect_d16_32",
+   "run": "cf989_wf_elect_d16_32",
+   "switches": {},
+   "raw": [],
+   "per_case": null,
+   "commit": "5cd1853",
+   "t": 1793823040
+  },
+  {
+   "name": "wf_iwarp_all",
+   "run": "cf990_wf_iwarp_all",
+   "switches": {},
+   "raw": [
+    [
+     "moe_v1s",
+     "-DMOE_IWARP=1"
+    ],
+    [
+     "moe_d16s",
+     "-DMOE_IWARP=1"
+    ],
+    [
+     "moe_d16f",
+     "-DMOE_IWARP=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "b50f519",
+   "t": 1793823704
+  },
+  {
+   "name": "dbt_rmsfix2",
+   "run": "cf991_dbt_rmsfix2",
+   "switches": {},
+   "raw": [],
+   "per_case": null,
+   "commit": "e278980",
+   "t": 1793827274
+  },
+  {
+   "name": "ex_itail_rms",
+   "run": "cf993_ex_itail_rms",
+   "switches": {},
+   "raw": [
+    [
+     "moe_d1s",
+     "-DMOE_ITAIL=1"
+    ],
+    [
+     "moe_d1f",
+     "-DMOE_ITAIL=1"
+    ],
+    [
+     "moe_v1s",
+     "-DMOE_ITAIL=1"
+    ],
+    [
+     "moe_v1f",
+     "-DMOE_ITAIL=1"
+    ],
+    [
+     "moe_d16s",
+     "-DMOE_ITAIL=1"
+    ],
+    [
+     "moe_d16f",
+     "-DMOE_ITAIL=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "fb94814",
+   "t": 1793828867
+  },
+  {
+   "name": "mid_itail0",
+   "run": "cf1000_mid_itail0",
+   "switches": {},
+   "raw": [
+    [
+     "moe_d16s",
+     "-DMOE_ITAIL=0"
+    ],
+    [
+     "moe_d16f",
+     "-DMOE_ITAIL=0"
+    ]
+   ],
+   "per_case": null,
+   "commit": "fb94814",
+   "t": 1793833258
+  },
+  {
+   "name": "ca9s_mid",
+   "run": "cf1003_ca9s_mid",
+   "switches": {},
+   "raw": [
+    [
+     "moe_d32s",
+     "-DMOE_CA=9"
+    ]
+   ],
+   "per_case": null,
+   "commit": "c14a33c",
+   "t": 1793836714
+  },
+  {
+   "name": "sk2rred",
+   "run": "cf1006_sk2rred",
+   "switches": {},
+   "raw": [
+    [
+     "sk2",
+     "-DSK2_RRED=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "cedc49d",
+   "t": 1793837413
+  },
+  {
+   "name": "ex_route1_rr",
+   "run": "cf1010_ex_route1_rr",
+   "switches": {},
+   "raw": [
+    [
+     "moe_d1s",
+     "-DMOE_ROUTE1=1"
+    ],
+    [
+     "moe_d1f",
+     "-DMOE_ROUTE1=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "318e36d",
+   "t": 1793839075
+  },
+  {
+   "name": "sk2espl_r2",
+   "run": "cf1012_sk2espl_r2",
+   "switches": {},
+   "raw": [
+    [
+     "sk2",
+     "-DSK2_ESPL=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "af1ff9c",
+   "t": 1793839747
+  },
+  {
+   "name": "fnsbal_e",
+   "run": "cf1013_fnsbal_e",
+   "switches": {},
+   "raw": [
+    [
+     "moe_d1s",
+     "-DMOE_FNSBAL=1"
+    ],
+    [
+     "moe_d1f",
+     "-DMOE_FNSBAL=1"
+    ],
+    [
+     "moe_v1s",
+     "-DMOE_FNSBAL=1"
+    ],
+    [
+     "moe_v1f",
+     "-DMOE_FNSBAL=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "cd1fbf5",
+   "t": 1793841655
+  },
+  {
+   "name": "epoch_f",
+   "run": "cf1018_epoch_f",
+   "switches": {},
+   "raw": [
+    [
+     "attention",
+     "-DATT_EPOCH_ASYNC=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "4dbee12",
+   "t": 1793842498
+  },
+  {
+   "name": "roleuni_g",
+   "run": "cf1021_roleuni_g",
+   "switches": {},
+   "raw": [
+    [
+     "moe_d1s",
+     "-DMOE_ROLEUNI=1"
+    ],
+    [
+     "moe_d1f",
+     "-DMOE_ROLEUNI=1"
+    ],
+    [
+     "moe_v1s",
+     "-DMOE_ROLEUNI=1"
+    ],
+    [
+     "moe_v1f",
+     "-DMOE_ROLEUNI=1"
+    ],
+    [
+     "moe_d16s",
+     "-DMOE_ROLEUNI=1"
+    ],
+    [
+     "moe_d16f",
+     "-DMOE_ROLEUNI=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "cfd3e67",
+   "t": 1793844321
+  },
+  {
+   "name": "rmom1_r1",
+   "run": "cf1023_rmom1_r1",
+   "switches": {},
+   "raw": [
+    [
+     "glue_router",
+     "-DGLUE_RMOM=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "dae2ef0",
+   "t": 1793845013
+  },
+  {
+   "name": "bundle2_roleuni_g_r1",
+   "run": "cf1031_bundle2_roleuni_g_r1",
+   "switches": {},
+   "raw": [
+    [
+     "attention",
+     "-DATT_V8_QDIR=1"
+    ],
+    [
+     "attention",
+     "-DATT_V8C_BF16RED=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "261cb4a",
+   "t": 1793845569
+  },
+  {
+   "name": "bundle3_bundle2_roleuni_g_r1",
+   "run": "cf1032_bundle3_bundle2_roleuni_g_r1",
+   "switches": {},
+   "raw": [
+    [
+     "attention",
+     "-DATT_VERIFY_WST=1"
+    ],
+    [
+     "attention",
+     "-DATT_V8_SCHEXP=1"
+    ],
+    [
+     "glue",
+     "-DGLUE_B1_ROWS=32"
+    ],
+    [
+     "glue",
+     "-DGLUE_B2_ROWS=8"
+    ]
+   ],
+   "per_case": null,
+   "commit": "ef621f7",
+   "t": 1793845849
+  },
+  {
+   "name": "dcb2_r1",
+   "run": "cf1035_dcb2_r1",
+   "switches": {},
+   "raw": [
+    [
+     "moe_d32s",
+     "-DMOE_CA=2"
+    ]
+   ],
+   "per_case": null,
+   "commit": "ef621f7",
+   "t": 1793848205
+  },
+  {
+   "name": "stack3",
+   "run": "cf1039_stack3",
+   "switches": {},
+   "raw": [
+    [
+     "sk2",
+     "-DSK2_RSUM=1"
+    ],
+    [
+     "sk2_gle",
+     "-DSK2_RSUM=1"
+    ],
+    [
+     "moe_big",
+     "-DMOE_YKEEP=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "522af6f",
+   "t": 1793848574
+  },
+  {
+   "name": "bundle5_stack3",
+   "run": "cf1040_bundle5_stack3",
+   "switches": {
+    "rq_o": 1
+   },
+   "raw": [
+    [
+     "attention",
+     "-DATT_V1_GATE_EARLY=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "0421881",
+   "t": 1793849186
+  },
+  {
+   "name": "bundle6_bundle5_stack3",
+   "run": "cf1041_bundle6_bundle5_stack3",
+   "switches": {},
+   "raw": [
+    [
+     "moe_d32f",
+     "-DMOE_CA=7"
+    ],
+    [
+     "attention",
+     "-DATT_V1_GATE_EARLY=2"
+    ],
+    [
+     "attention",
+     "-DATT_V8F_SCHEXP=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "4d4aa6f",
+   "t": 1793850428
+  },
+  {
+   "name": "bundle7_bundle6_bundle5_stack3",
+   "run": "cf1042_bundle7_bundle6_bundle5_stack3",
+   "switches": {},
+   "raw": [
+    [
+     "sk2",
+     "-DSK2_XR=3"
+    ],
+    [
+     "sk2",
+     "-DSK2_XRM=2"
+    ],
+    [
+     "attention",
+     "-DATT_V1_POLL_NS=0"
+    ]
+   ],
+   "per_case": null,
+   "commit": "cbde96e",
+   "t": 1793851008
+  },
+  {
+   "name": "bundle8_bundle7_bundle6_bundle5_stack3",
+   "run": "cf1043_bundle8_bundle7_bundle6_bundle5_stack3",
+   "switches": {},
+   "raw": [
+    [
+     "attention",
+     "-DATT_V1_BF16RED=1"
+    ],
+    [
+     "glue",
+     "-DGLUE_STAS=1"
+    ],
+    [
+     "glue_router",
+     "-DGLUE_STAS=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "b9c06c3",
+   "t": 1793851760
+  },
+  {
+   "name": "pc9",
+   "run": "cf1045_pc9",
+   "switches": {},
+   "raw": [],
+   "per_case": {
+    "d1f": {
+     "ts2": 0
+    },
+    "d1s": {
+     "xslot_t1": 0
+    },
+    "v16f": {
+     "rul_rq": 3,
+     "rq_wpre": 1
+    },
+    "d16s": {
+     "dlc_att": "none"
+    },
+    "v1f": {
+     "dlc_moes": "none"
+    }
+   },
+   "commit": "b9c06c3",
+   "t": 1793855363
+  },
+  {
+   "name": "ctabar1_r1",
+   "run": "cf1047_ctabar1_r1",
+   "switches": {},
+   "raw": [
+    [
+     "attention",
+     "-DATT_V1_CTA_BARRIER=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "a55b473",
+   "t": 1793856907
+  },
+  {
+   "name": "vovl1_r2",
+   "run": "cf1055_vovl1_r2",
+   "switches": {},
+   "raw": [
+    [
+     "attention",
+     "-DATT_V8_OVL=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "882f6ed",
+   "t": 1793859918
+  },
+  {
+   "name": "un4_r1",
+   "run": "cf1070_un4_r1",
+   "switches": {},
+   "raw": [],
+   "per_case": null,
+   "commit": "24ec744",
+   "t": 1793860058
+  },
+  {
+   "name": "pc10_r2",
+   "run": "cf1078_pc10_r2",
+   "switches": {},
+   "raw": [],
+   "per_case": {
+    "d16f": {
+     "p05": 0,
+     "brel": 1
+    },
+    "d16s": {
+     "spoll2": 1,
+     "brel": 1,
+     "dlc_att": "cg"
+    },
+    "v16f": {
+     "rqst128": 6
+    },
+    "v1f": {
+     "dlc_moes": "ca",
+     "sk2bf16p": 0
+    },
+    "v1s": {
+     "dlc_sk2": "none"
+    },
+    "d32f": {
+     "sk2bf16p": 0
+    }
+   },
+   "commit": "24ec744",
+   "t": 1793861197
+  },
+  {
+   "name": "rlxpoll1_r5",
+   "run": "cf1084_rlxpoll1_r5",
+   "switches": {},
+   "raw": [
+    [
+     "attention",
+     "-DATT_V1_RELAXED_POLL=1"
+    ]
+   ],
+   "per_case": null,
+   "commit": "ce3c807",
+   "t": 1793861784
+  }
+ ],
+ "per_case": {
+  "d32s": {
+   "rul_moew": 3,
+   "rul_sk2": 5
+  },
+  "d32f": {
+   "rul_sk2": 5,
+   "sk2bf16p": 0
+  },
+  "v32s": {
+   "rul_rq": 3
+  },
+  "v32f": {
+   "rul_att": 7
+  },
+  "d1f": {
+   "rul_sk2": 5,
+   "ts2": 0
+  },
+  "d16s": {
+   "dlc_sk2": "cg",
+   "dlc_att": "cg",
+   "spoll2": 1,
+   "brel": 1
+  },
+  "v1f": {
+   "rul_sk2": 3,
+   "dlc_moes": "ca",
+   "sk2bf16p": 0
+  },
+  "d16f": {
+   "sk2c7": 1,
+   "p05": 0,
+   "brel": 1
+  },
+  "d1s": {
+   "xslot_t1": 0
+  },
+  "v16f": {
+   "rul_rq": 3,
+   "rq_wpre": 1,
+   "rqst128": 6
+  },
+  "v1s": {
+   "dlc_sk2": "none"
+  }
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "name": "rlxpoll1_r5",
+ "file": "candidates/layer_cf1084_rlxpoll1_r5.py",
+ "md5": "87126498f9e45932762389d1d491acff",
+ "since": 1793861784,
+ "over": "pc10_r2",
+ "runs": [
+  "cf1084_rlxpoll1_r5"
+ ],
+ "point": {
+  "p05": 1,
+  "sk2bf16p": 1,
+  "dfpoll": 1,
+  "spoll2": 0,
+  "wsblk_t2": 1,
+  "wsblk_m1": 1,
+  "ts2": 1,
+  "bf16red": 0,
+  "sk2c7": 0,
+  "rqc7": 0,
+  "stages": 3,
+  "vunroll": 2,
+  "nsplit16": 11,
+  "v32s": 4,
+  "sdef": 0,
+  "brel": 0,
+  "mid16": 0,
+  "rul_moes": 5,
+  "dlc_moes": "ca",
+  "rul_moew": 7,
+  "dlc_moew": "none",
+  "rul_att": 7,
+  "dlc_att": "ca",
+  "rul_sk2": 7,
+  "dlc_sk2": "ca",
+  "rul_rq": 5,
+  "dlc_rq": "none",
+  "sc6s": 1,
+  "gle_t8": 0,
+  "sk2_ce": 0,
+  "rq_pool": 0,
+  "rq_o": 1,
+  "ca_d32s": 2,
+  "ca_d32f": 7,
+  "ca_big": 0,
+  "brev": 0,
+  "rqst128": 5,
+  "rqst256": 5,
+  "rq_wpre": 0,
+  "xslot_t1": 2,
+  "xslot_v1f": 0,
+  "elect": 0,
+  "pdle": 0
+ },
+ "per_case": {
+  "d32s": {
+   "rul_moew": 3,
+   "rul_sk2": 5
+  },
+  "d32f": {
+   "rul_sk2": 5,
+   "sk2bf16p": 0
+  },
+  "v32s": {
+   "rul_rq": 3
+  },
+  "v32f": {
+   "rul_att": 7
+  },
+  "d1f": {
+   "rul_sk2": 5,
+   "ts2": 0
+  },
+  "d16s": {
+   "dlc_sk2": "cg",
+   "dlc_att": "cg",
+   "spoll2": 1,
+   "brel": 1
+  },
+  "v1f": {
+   "rul_sk2": 3,
+   "dlc_moes": "ca",
+   "sk2bf16p": 0
+  },
+  "d16f": {
+   "sk2c7": 1,
+   "p05": 0,
+   "brel": 1
+  },
+  "d1s": {
+   "xslot_t1": 0
+  },
+  "v16f": {
+   "rul_rq": 3,
+   "rq_wpre": 1,
+   "rqst128": 6
+  },
+  "v1s": {
+   "dlc_sk2": "none"
+  }
+ }
+}

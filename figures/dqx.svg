@@ -1,0 +1,277 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 640" width="1240" height="640" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="The dqx NVFP4 decode">
+<title>The dqx NVFP4 decode</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="640" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">dqx: eight FP4 weights to BF16 in 8 instructions, 5 of them integer-pipe ops</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">prepare() stores each 32-bit word through an invertible GF(2) map, so the kernel&#x27;s decode is a few shifts, XORs and masks.</text>
+<text x="200" y="105" font-size="12.5" fill="#1B2430" font-weight="650" text-anchor="end" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">q (stored)</text>
+<rect x="706" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="690" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="674" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="658" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="642" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="626" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="610" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="594" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<text x="601.0" y="88" font-size="9" fill="#5B6573" font-weight="500" text-anchor="middle" opacity="1">7</text>
+<rect x="578" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="562" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="546" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="530" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="514" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="498" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="482" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="466" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<text x="473.0" y="88" font-size="9" fill="#5B6573" font-weight="500" text-anchor="middle" opacity="1">15</text>
+<rect x="450" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="434" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="418" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="402" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="386" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="370" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="354" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="338" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<text x="345.0" y="88" font-size="9" fill="#5B6573" font-weight="500" text-anchor="middle" opacity="1">23</text>
+<rect x="322" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="306" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="290" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="274" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="258" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="242" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="226" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="210" y="92" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<text x="217.0" y="88" font-size="9" fill="#5B6573" font-weight="500" text-anchor="middle" opacity="1">31</text>
+<text x="736" y="105" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">one 32-bit word = 8 NVFP4 codes, in a layout chosen by search</text>
+<rect x="30" y="132" width="280" height="46" rx="8" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<text x="44" y="152" font-size="13" fill="#1B2430" font-weight="700" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">R = rotr(q, 6)</text>
+<text x="44" y="170" font-size="11.5" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">SHF.W: integer pipe (cost model)</text>
+<rect x="330" y="132" width="280" height="46" rx="8" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1.2" opacity="1"/>
+<text x="344" y="152" font-size="13" fill="#1B2430" font-weight="700" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">R &lt;&lt; 2</text>
+<text x="344" y="170" font-size="11.5" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">IMAD.SHL: FMA pipe (cost model)</text>
+<rect x="630" y="132" width="280" height="46" rx="8" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1.2" opacity="1"/>
+<text x="644" y="152" font-size="13" fill="#1B2430" font-weight="700" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">q &lt;&lt; 4</text>
+<text x="644" y="170" font-size="11.5" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">IMAD.SHL: FMA pipe (cost model)</text>
+<rect x="930" y="132" width="280" height="46" rx="8" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1.2" opacity="1"/>
+<text x="944" y="152" font-size="13" fill="#1B2430" font-weight="700" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">q &lt;&lt; 6</text>
+<text x="944" y="170" font-size="11.5" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">IMAD.SHL: FMA pipe (cost model)</text>
+<rect x="30" y="210" width="150" height="22" rx="5" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<text x="40" y="226" font-size="11" fill="#1B2430" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">LOP3  M &amp; q</text>
+<text x="240" y="225" font-size="12.5" fill="#1B2430" font-weight="650" text-anchor="end" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">r0</text>
+<rect x="746" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="730" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="714" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="698" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="682" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="666" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="650" y="212" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="657.0" y="224" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">m</text>
+<rect x="634" y="212" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="641.0" y="224" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e0</text>
+<rect x="618" y="212" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="625.0" y="224" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e1</text>
+<rect x="602" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="586" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="570" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="554" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="538" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="522" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="506" y="212" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="513.0" y="224" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">s</text>
+<rect x="490" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="474" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="458" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="442" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="426" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="410" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="394" y="212" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="401.0" y="224" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">m</text>
+<rect x="378" y="212" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="385.0" y="224" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e0</text>
+<rect x="362" y="212" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="369.0" y="224" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e1</text>
+<rect x="346" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="330" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="314" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="298" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="282" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="266" y="212" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="250" y="212" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="257.0" y="224" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">s</text>
+<rect x="30" y="250" width="150" height="22" rx="5" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<text x="40" y="266" font-size="11" fill="#1B2430" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">LOP3  M &amp; (q ^ R&lt;&lt;2)</text>
+<text x="240" y="265" font-size="12.5" fill="#1B2430" font-weight="650" text-anchor="end" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">r1</text>
+<rect x="746" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="730" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="714" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="698" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="682" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="666" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="650" y="252" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="657.0" y="264" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">m</text>
+<rect x="634" y="252" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="641.0" y="264" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e0</text>
+<rect x="618" y="252" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="625.0" y="264" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e1</text>
+<rect x="602" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="586" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="570" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="554" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="538" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="522" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="506" y="252" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="513.0" y="264" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">s</text>
+<rect x="490" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="474" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="458" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="442" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="426" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="410" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="394" y="252" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="401.0" y="264" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">m</text>
+<rect x="378" y="252" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="385.0" y="264" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e0</text>
+<rect x="362" y="252" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="369.0" y="264" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e1</text>
+<rect x="346" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="330" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="314" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="298" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="282" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="266" y="252" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="250" y="252" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="257.0" y="264" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">s</text>
+<rect x="30" y="290" width="150" height="22" rx="5" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<text x="40" y="306" font-size="11" fill="#1B2430" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">LOP3  M &amp; (R ^ q&lt;&lt;4)</text>
+<text x="240" y="305" font-size="12.5" fill="#1B2430" font-weight="650" text-anchor="end" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">r2</text>
+<rect x="746" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="730" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="714" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="698" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="682" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="666" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="650" y="292" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="657.0" y="304" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">m</text>
+<rect x="634" y="292" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="641.0" y="304" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e0</text>
+<rect x="618" y="292" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="625.0" y="304" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e1</text>
+<rect x="602" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="586" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="570" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="554" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="538" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="522" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="506" y="292" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="513.0" y="304" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">s</text>
+<rect x="490" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="474" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="458" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="442" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="426" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="410" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="394" y="292" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="401.0" y="304" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">m</text>
+<rect x="378" y="292" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="385.0" y="304" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e0</text>
+<rect x="362" y="292" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="369.0" y="304" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e1</text>
+<rect x="346" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="330" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="314" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="298" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="282" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="266" y="292" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="250" y="292" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="257.0" y="304" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">s</text>
+<rect x="30" y="330" width="150" height="22" rx="5" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<text x="40" y="346" font-size="11" fill="#1B2430" font-weight="600" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">LOP3  M &amp; (R ^ q&lt;&lt;6)</text>
+<text x="240" y="345" font-size="12.5" fill="#1B2430" font-weight="650" text-anchor="end" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">r3</text>
+<rect x="746" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="730" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="714" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="698" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="682" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="666" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="650" y="332" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="657.0" y="344" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">m</text>
+<rect x="634" y="332" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="641.0" y="344" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e0</text>
+<rect x="618" y="332" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="625.0" y="344" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e1</text>
+<rect x="602" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="586" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="570" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="554" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="538" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="522" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="506" y="332" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="513.0" y="344" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">s</text>
+<rect x="490" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="474" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="458" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="442" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="426" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="410" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="394" y="332" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="401.0" y="344" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">m</text>
+<rect x="378" y="332" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="385.0" y="344" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e0</text>
+<rect x="362" y="332" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="369.0" y="344" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">e1</text>
+<rect x="346" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="330" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="314" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="298" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="282" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="266" y="332" width="14" height="16" rx="2" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1" opacity="1"/>
+<rect x="250" y="332" width="14" height="16" rx="2" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1" opacity="1"/>
+<text x="257.0" y="344" font-size="9" fill="#2F6FDE" font-weight="700" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">s</text>
+<text x="776" y="230" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">M = 0x81C081C0: each register&#x27;s 8 lit bits are two</text>
+<text x="776" y="248" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">BF16 halves, (s, e1, e0, m) at bits 15/8/7/6 and 31/24/23/22,</text>
+<text x="776" y="266" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">which is the E2M1 value x 2^-126 exactly. One bf16x2</text>
+<text x="776" y="284" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">multiply by scale x 2^126 then gives the exact product.</text>
+<text x="776" y="314" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Some stored bits are read 3 times and the extra copies</text>
+<text x="776" y="332" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">cancel through the XOR partner, so the layout has to be</text>
+<text x="776" y="350" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">an XOR mix, not a permutation.</text>
+<text x="30" y="390" font-size="14" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">Same 32 decoded bits, three layouts</text>
+<text x="30" y="418" font-size="12" fill="#5B6573" font-weight="650" text-anchor="start" opacity="1">layout</text>
+<text x="300" y="418" font-size="12" fill="#5B6573" font-weight="650" text-anchor="start" opacity="1">integer-pipe ops</text>
+<text x="470" y="418" font-size="12" fill="#5B6573" font-weight="650" text-anchor="start" opacity="1">FMA-pipe ops</text>
+<text x="630" y="418" font-size="12" fill="#5B6573" font-weight="650" text-anchor="start" opacity="1">screen vs production</text>
+<text x="30" y="442" font-size="13" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">DQ7, inherited</text>
+<text x="300" y="442" font-size="13" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">7</text>
+<text x="470" y="442" font-size="13" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">2</text>
+<text x="630" y="442" font-size="13" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">1.0131</text>
+<rect x="720" y="429" width="27.899999999998926" height="16" rx="3" fill="#C9D1DB" stroke="none" stroke-width="1.2" opacity="1"/>
+<text x="30" y="472" font-size="13" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">dqm, a public solution</text>
+<text x="300" y="472" font-size="13" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">7</text>
+<text x="470" y="472" font-size="13" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">1</text>
+<text x="630" y="472" font-size="13" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">1.0146</text>
+<rect x="720" y="459" width="41.39999999999944" height="16" rx="3" fill="#C9D1DB" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="22" y="483" width="760" height="28" rx="5" fill="#E4F4EE" stroke="none" stroke-width="1.2" opacity="1"/>
+<text x="30" y="502" font-size="13" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">dqx, found by search</text>
+<text x="300" y="502" font-size="13" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">5</text>
+<text x="470" y="502" font-size="13" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">3</text>
+<text x="630" y="502" font-size="13" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">1.0171</text>
+<rect x="720" y="489" width="63.899999999998954" height="16" rx="3" fill="#2A9D6F" stroke="none" stroke-width="1.2" opacity="1"/>
+<text x="30" y="550" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" font-style="italic" opacity="1">200 paired, role-swapped repetitions each, same GPU, base and seeds. dqx: +0.39% over DQ7, +0.25% over dqm, +0.7 to 1.0% at the large loads.</text>
+<text x="30" y="572" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" font-style="italic" opacity="1">Removing it from the incumbent later cost 0.72% in a screen: the largest single piece of the incumbent at the time.</text>
+<rect x="820" y="380" width="400" height="180" rx="10" fill="#F4F6F9" stroke="#C9D1DB" stroke-width="1.2" opacity="1"/>
+<text x="838" y="406" font-size="13.5" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">Why only +0.4%</text>
+<text x="838" y="432" font-size="12" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">the integer pipe was 48% busy, the FMA</text>
+<text x="838" y="452" font-size="12" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">pipe 42%: issue-throttled, but not the</text>
+<text x="838" y="472" font-size="12" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">72% the public author saw. Moving 2 ops</text>
+<text x="838" y="492" font-size="12" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">per word to the FMA pipe relieves part</text>
+<text x="838" y="512" font-size="12" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">of it, and the stream is partly</text>
+<text x="838" y="532" font-size="12" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">HBM-bound anyway.</text>
+</svg>

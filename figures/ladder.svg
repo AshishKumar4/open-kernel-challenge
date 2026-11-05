@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 552" width="1240" height="552" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="The impossibility ladder">
+<title>The impossibility ladder</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="552" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">Each bound holds only inside the family searched</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Top to bottom: the families tried on Nov 3. The &#x27;floor&#x27; we believed in that morning was 13 ops per 8 codes.</text>
+<rect x="30" y="84" width="760" height="34" rx="6" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1.2" opacity="1"/>
+<text x="44" y="106" font-size="12.5" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">any ops that only move bits up (shifts left, masks, IMAD)</text>
+<rect x="810" y="91.5" width="82.69999999999999" height="20.5" rx="10.25" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="851.35" y="107" font-size="11.5" fill="#D1495B" font-weight="600" text-anchor="middle" opacity="1">impossible</text>
+<text x="930" y="106" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">28 decoded bits from 25 inputs</text>
+<rect x="30" y="128" width="760" height="34" rx="6" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1.2" opacity="1"/>
+<text x="44" y="150" font-size="12.5" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">M &amp; (q&lt;&lt;a ^ q&lt;&lt;b), 0 to 4 IMAD.SHL, no right mover</text>
+<rect x="810" y="135.5" width="22.67" height="20.5" rx="10.25" fill="#F4F6F9" stroke="#5B6573" stroke-width="1" opacity="1"/>
+<text x="821.335" y="151" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="middle" opacity="1">0</text>
+<text x="930" y="150" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">fp4_layout.c</text>
+<rect x="30" y="172" width="760" height="34" rx="6" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1.2" opacity="1"/>
+<text x="44" y="194" font-size="12.5" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">one logical right shift + up to 3 left, no chaining</text>
+<rect x="810" y="179.5" width="22.67" height="20.5" rx="10.25" fill="#F4F6F9" stroke="#5B6573" stroke-width="1" opacity="1"/>
+<text x="821.335" y="195" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="middle" opacity="1">0</text>
+<text x="930" y="194" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">fp4_layout2.c</text>
+<rect x="30" y="216" width="760" height="34" rx="6" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1.2" opacity="1"/>
+<text x="44" y="238" font-size="12.5" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">one logical right shift (IMAD.HI-able) + chained registers, shifts up to 31</text>
+<rect x="810" y="223.5" width="22.67" height="20.5" rx="10.25" fill="#F4F6F9" stroke="#5B6573" stroke-width="1" opacity="1"/>
+<text x="821.335" y="239" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="middle" opacity="1">0</text>
+<text x="930" y="238" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">8 min 24 s</text>
+<rect x="30" y="260" width="760" height="34" rx="6" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1.2" opacity="1"/>
+<text x="44" y="282" font-size="12.5" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">permutation layouts (four variants), BF16 and FP16 targets</text>
+<rect x="810" y="267.5" width="22.67" height="20.5" rx="10.25" fill="#F4F6F9" stroke="#5B6573" stroke-width="1" opacity="1"/>
+<text x="821.335" y="283" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="middle" opacity="1">0</text>
+<text x="930" y="282" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">fp4_layout4-6</text>
+<rect x="30" y="304" width="760" height="34" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.2" opacity="1"/>
+<text x="44" y="326" font-size="12.5" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">rotation + XOR pairs (+ chaining allowed) + up to 3 IMAD.SHL of q or R</text>
+<rect x="810" y="311.5" width="56.019999999999996" height="20.5" rx="10.25" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="838.01" y="327" font-size="11.5" fill="#2A9D6F" font-weight="600" text-anchor="middle" opacity="1">27,840</text>
+<text x="930" y="326" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">dqx: 28 min</text>
+<line x1="20" y1="344" x2="1220" y2="344" stroke="#C9D1DB" stroke-dasharray="4 4"/>
+<rect x="30" y="348" width="760" height="34" rx="6" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1.2" opacity="1"/>
+<text x="44" y="370" font-size="12.5" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">7-op decodes: three views of q (two searches)</text>
+<rect x="810" y="355.5" width="22.67" height="20.5" rx="10.25" fill="#F4F6F9" stroke="#5B6573" stroke-width="1" opacity="1"/>
+<text x="821.335" y="371" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="middle" opacity="1">0</text>
+<text x="930" y="370" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">within the family</text>
+<rect x="30" y="392" width="760" height="34" rx="6" fill="#FAFBFC" stroke="#C9D1DB" stroke-width="1.2" opacity="1"/>
+<text x="44" y="414" font-size="12.5" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">7-op decodes, FP16 target: 1.01e9 candidates</text>
+<rect x="810" y="399.5" width="22.67" height="20.5" rx="10.25" fill="#F4F6F9" stroke="#5B6573" stroke-width="1" opacity="1"/>
+<text x="821.335" y="415" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="middle" opacity="1">0</text>
+<text x="930" y="414" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">within the family</text>
+<text x="30" y="460" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">The winning form uses a rotation (not a logical shift) as the right mover, XOR of two sources per mask, left shifts of the rotated word,</text>
+<text x="30" y="482" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">and an invertible non-permutation layout; it needs no chaining. From the public hint to the first solution: about 42 minutes.</text>
+</svg>

@@ -1,0 +1,22 @@
+time_utc,job,file,time_us,speedup,note
+2026-11-01T22:26,58d2ec83,reviewed production (ported base + first own changes),10110,2.238,first scored run of the ported base
+2026-11-02T04:47,b83679c4,,10100,,speedup not captured
+2026-11-02T13:30,637ea3c3,layer_glue_r8,10040,2.252,
+2026-11-02T19:26,92e3e633,layer_gtrim3s,9995.9,2.263,
+2026-11-03T03:42,ae41ec22,layer_gbest1f,9886.6,2.288,
+2026-11-03T04:43,2bdad309,layer_gbest2xf,9889.1,2.287,
+2026-11-03T22:21,1a9bc976,layer_astra_ovl_final,9981.6,,speedup not captured
+2026-11-04T19:24,000e1770,layer_cf981_dbt_trim_final,9795.5,2.309,
+2026-11-04T22:18,871b0e64,layer_cf991_dbt_rmsfix2_final,9867.6,2.292,attention RMS overflow fix
+2026-11-05T03:21,c881a7c3,layer_stack3_final,9697.5,2.333,
+2026-11-05T07:29,1ac1a453,layer_cf1045_pc9_final,9742.7,2.322,final burst
+2026-11-05T07:29,539a9a86,layer_cf1078_pc10_r2_final,9703.1,2.331,final burst
+2026-11-05T07:29,7c5fdba7,layer_cf1070_un4_r1_final,9809.2,2.306,final burst
+2026-11-05T07:29,809cd321,layer_cf1055_vovl1_r2_final,9731.6,2.324,final burst
+2026-11-05T07:29,99f60821,layer_cf1084_rlxpoll1_r5_final,9736.8,2.323,final burst; final validated incumbent
+2026-11-05T07:29,bd43bd25,layer_cf1047_ctabar1_r1_final,9700.5,2.332,final burst
+2026-11-05T07:29,ce41fa16,layer_cf1043_bundle8_final,9736.1,2.323,final burst
+2026-11-05T07:38,5fcec3e5,layer_cf1041_bundle6_bundle5_stack3_final,9659.4,2.342,final burst; best run on the board
+2026-11-05T07:38,a50d6df4,layer_dcf7_r2_final,9677.3,2.337,final burst
+2026-11-05T07:38,ed880e24,layer_cf1042_bundle7_final,9696.2,2.333,final burst
+2026-11-05T07:39,3622215e,layer_cf1040_bundle5_stack3_final,9677.8,2.337,final burst

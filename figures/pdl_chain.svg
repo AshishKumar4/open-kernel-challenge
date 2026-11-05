@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 550" width="1240" height="550" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="Decode 1 sliding as a PDL chain">
+<title>Decode 1 sliding as a PDL chain</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="550" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">Decode 1, sliding layer: one layer in 55 µs</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">nsys of one graph replay. Each kernel starts 1 to 5 µs before its predecessor ends (PDL). Bars: kernel start to end.</text>
+<line x1="250.0" y1="84" x2="250.0" y2="410" stroke="#EDF0F4"/>
+<text x="250.0" y="80" font-size="11" fill="#5B6573" font-weight="600" text-anchor="middle" opacity="1">0 µs</text>
+<line x1="416.1" y1="84" x2="416.1" y2="410" stroke="#EDF0F4"/>
+<text x="416.07142857142856" y="80" font-size="11" fill="#5B6573" font-weight="600" text-anchor="middle" opacity="1">10 µs</text>
+<line x1="582.1" y1="84" x2="582.1" y2="410" stroke="#EDF0F4"/>
+<text x="582.1428571428571" y="80" font-size="11" fill="#5B6573" font-weight="600" text-anchor="middle" opacity="1">20 µs</text>
+<line x1="748.2" y1="84" x2="748.2" y2="410" stroke="#EDF0F4"/>
+<text x="748.2142857142858" y="80" font-size="11" fill="#5B6573" font-weight="600" text-anchor="middle" opacity="1">30 µs</text>
+<line x1="914.3" y1="84" x2="914.3" y2="410" stroke="#EDF0F4"/>
+<text x="914.2857142857143" y="80" font-size="11" fill="#5B6573" font-weight="600" text-anchor="middle" opacity="1">40 µs</text>
+<line x1="1080.4" y1="84" x2="1080.4" y2="410" stroke="#EDF0F4"/>
+<text x="1080.357142857143" y="80" font-size="11" fill="#5B6573" font-weight="600" text-anchor="middle" opacity="1">50 µs</text>
+<text x="238" y="110" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">qkv projection</text>
+<rect x="250.0" y="96" width="146.14285714285717" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="238" y="150" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">attention</text>
+<rect x="366.25" y="136" width="117.91071428571428" height="22" rx="4" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.2" opacity="1"/>
+<rect x="366.25" y="136" width="29.892857142857167" height="22" rx="4" fill="#7C5CC4" stroke="none" stroke-width="1.2" opacity="0.25"/>
+<text x="238" y="190" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">o projection + boundary</text>
+<rect x="404.44642857142856" y="176" width="142.82142857142856" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="404.44642857142856" y="176" width="79.71428571428572" height="22" rx="4" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="0.25"/>
+<text x="238" y="230" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">pooler + router</text>
+<rect x="533.9821428571429" y="216" width="279.0" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="533.9821428571429" y="216" width="13.28571428571422" height="22" rx="4" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="0.25"/>
+<text x="238" y="270" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">route</text>
+<rect x="751.5357142857142" y="256" width="86.35714285714289" height="22" rx="4" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<rect x="751.5357142857142" y="256" width="61.44642857142867" height="22" rx="4" fill="#E0A030" stroke="none" stroke-width="1.2" opacity="0.25"/>
+<text x="238" y="310" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">experts (MoE)</text>
+<rect x="821.2857142857143" y="296" width="260.7321428571428" height="22" rx="4" fill="#FBEAED" stroke="#D1495B" stroke-width="1.2" opacity="1"/>
+<rect x="821.2857142857143" y="296" width="16.607142857142776" height="22" rx="4" fill="#D1495B" stroke="none" stroke-width="1.2" opacity="0.25"/>
+<text x="238" y="350" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">unpooler</text>
+<rect x="1063.75" y="336" width="71.41071428571422" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="1063.75" y="336" width="18.26785714285711" height="22" rx="4" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="0.25"/>
+<text x="238" y="390" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">finish</text>
+<rect x="1100.2857142857142" y="376" width="64.76785714285734" height="22" rx="4" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<rect x="1100.2857142857142" y="376" width="34.875" height="22" rx="4" fill="#E0A030" stroke="none" stroke-width="1.2" opacity="0.25"/>
+<line x1="758.2" y1="90" x2="758.2" y2="414" stroke="#1F9AA8" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="764.1785714285714" y="430" font-size="12" fill="#1F9AA8" font-weight="650" text-anchor="start" opacity="1">30.6 µs: all 134.7 MB of the layer&#x27;s bytes at 4.4 TB/s</text>
+<text x="30" y="458" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">After the pooler ends, the route, experts, unpooler and finish take 21.2 µs for 34.6 MB that stream in 7.9 µs. The rest is ramps, hand-offs and tails.</text>
+<text x="30" y="480" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" font-style="italic" opacity="1">Shaded: the part of a kernel&#x27;s lifetime that overlaps its predecessor (prologue and weight prefetch before griddepcontrol.wait).</text>
+</svg>

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 760" width="1240" height="760" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="The agent system">
+<title>The agent system</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="760" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">The agent system</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Mostly I talked to the orchestrator. It ran the expert lanes, spawned reviewers and audits, and owned the GPU budget.</text>
+<rect x="470" y="74" width="300" height="62" rx="8" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="470" y="74" width="5" height="62" rx="2.5" fill="#7C5CC4"/>
+<text x="622.0" y="101.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Me</text>
+<text x="622.0" y="120.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">goals, rulings, caps, &#x27;status?&#x27;</text>
+<rect x="420" y="170" width="400" height="78" rx="8" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="420" y="170" width="5" height="78" rx="2.5" fill="#2F6FDE"/>
+<text x="622.0" y="196.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Orchestrator: Claude Opus 5.5</text>
+<text x="622.0" y="215.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">briefs and relays rulings, approves diffs,</text>
+<text x="622.0" y="232.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">books GPUs, reports</text>
+<path d="M620,136 L620,170" fill="none" stroke="#7C5CC4" stroke-width="1.6" marker-end="url(#arr-violet)" marker-start="url(#arr-violet)" stroke-linejoin="round"/>
+<text x="632" y="158" font-size="11.5" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">1,085 messages from me; 112 blocking questions</text>
+<rect x="30" y="170" width="330" height="78" rx="8" fill="#F4F6F9" stroke="#5B6573" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="30" y="170" width="5" height="78" rx="2.5" fill="#5B6573"/>
+<text x="197.0" y="196.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Advisor</text>
+<text x="197.0" y="215.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">a second model reading the orchestrator&#x27;s</text>
+<text x="197.0" y="232.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">messages and diffs (388 advisories)</text>
+<path d="M360,209 L420,209" fill="none" stroke="#5B6573" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-muted)" stroke-linejoin="round"/>
+<rect x="880" y="170" width="330" height="78" rx="8" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="880" y="170" width="5" height="78" rx="2.5" fill="#E0A030"/>
+<text x="1047.0" y="196.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Audits and EAT rounds</text>
+<text x="1047.0" y="215.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">reviewers read raw transcripts and</text>
+<text x="1047.0" y="232.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">receipts; 6 rounds, 1 audit of the orchestrator</text>
+<path d="M880,209 L820,209" fill="none" stroke="#E0A030" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-amber)" stroke-linejoin="round"/>
+<rect x="20" y="280" width="1200" height="250" rx="12" fill="none" stroke="#C9D1DB" stroke-width="1.2" stroke-dasharray="5 4" opacity="1"/>
+<text x="34" y="300" font-size="11" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">29 EXPERT LANES, 1 TO 7 AT A TIME</text>
+<path d="M620,248 L620,280" fill="none" stroke="#2F6FDE" stroke-width="1.6" marker-end="url(#arr-blue)" stroke-linejoin="round"/>
+<text x="680" y="270" font-size="11.5" fill="#5B6573" font-weight="500" text-anchor="middle" opacity="1">1,321 messages</text>
+<rect x="40" y="316" width="330" height="92" rx="8" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="40" y="316" width="5" height="92" rx="2.5" fill="#2F6FDE"/>
+<text x="207.0" y="349.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Operator lane</text>
+<text x="207.0" y="368.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">kernels on day one, then the base build,</text>
+<text x="207.0" y="385.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">queue, TPE study, confirmations, releases</text>
+<path d="M470,118 L390,118 L390,362 L373,362" fill="none" stroke="#7C5CC4" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr-violet)" stroke-linejoin="round"/>
+<text x="30" y="150" font-size="11.5" fill="#7C5CC4" font-weight="600" text-anchor="start" opacity="1">Nov 2-3: 267 messages straight to the operator</text>
+<rect x="392" y="316" width="196" height="92" rx="8" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="392" y="316" width="5" height="92" rx="2.5" fill="#7C5CC4"/>
+<text x="492.0" y="358.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Large-load MoE</text>
+<text x="492.0" y="377.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">Astra, then Opus</text>
+<rect x="598" y="316" width="196" height="92" rx="8" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="598" y="316" width="5" height="92" rx="2.5" fill="#2F6FDE"/>
+<text x="698.0" y="358.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Small-load MoE edges</text>
+<text x="698.0" y="377.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">Opus</text>
+<rect x="804" y="316" width="196" height="92" rx="8" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="804" y="316" width="5" height="92" rx="2.5" fill="#2F6FDE"/>
+<text x="904.0" y="358.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Projections, glue, codecs</text>
+<text x="904.0" y="377.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">Opus, EAT-style</text>
+<rect x="1010" y="316" width="196" height="92" rx="8" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="1010" y="316" width="5" height="92" rx="2.5" fill="#7C5CC4"/>
+<text x="1110.0" y="358.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Attention + per-shape</text>
+<text x="1110.0" y="377.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">Astra</text>
+<text x="40" y="440" font-size="12.5" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">short-lived research lanes:</text>
+<rect x="220" y="429.5" width="196.08999999999997" height="20.5" rx="10.25" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1" opacity="1"/>
+<text x="318.04499999999996" y="445" font-size="11.5" fill="#1F9AA8" font-weight="600" text-anchor="middle" opacity="1">algebra / FP4 decode search</text>
+<rect x="426.09" y="429.5" width="102.71" height="20.5" rx="10.25" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1" opacity="1"/>
+<text x="477.445" y="445" font-size="11.5" fill="#1F9AA8" font-weight="600" text-anchor="middle" opacity="1">clean rewrite</text>
+<rect x="538.8" y="429.5" width="82.69999999999999" height="20.5" rx="10.25" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1" opacity="1"/>
+<text x="580.15" y="445" font-size="11.5" fill="#1F9AA8" font-weight="600" text-anchor="middle" opacity="1">Lean model</text>
+<rect x="631.5" y="429.5" width="69.36" height="20.5" rx="10.25" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1" opacity="1"/>
+<text x="666.18" y="445" font-size="11.5" fill="#1F9AA8" font-weight="600" text-anchor="middle" opacity="1">ptxas RE</text>
+<rect x="710.86" y="429.5" width="96.03999999999999" height="20.5" rx="10.25" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1" opacity="1"/>
+<text x="758.88" y="445" font-size="11.5" fill="#1F9AA8" font-weight="600" text-anchor="middle" opacity="1">moonshot MoE</text>
+<text x="40" y="490" font-size="12.5" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">last night:</text>
+<rect x="130" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="156" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="182" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="208" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="234" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="260" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="286" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="312" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="338" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="364" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="390" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="416" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="442" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="468" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="494" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="520" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="546" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="572" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="598" y="474" width="20" height="22" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="640" y="490" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">19 fresh-attempt agents, ~90 min or 3 attempts each, reading the last one&#x27;s handoff</text>
+<rect x="30" y="560" width="370" height="86" rx="8" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="30" y="560" width="5" height="86" rx="2.5" fill="#2A9D6F"/>
+<text x="217.0" y="590.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Reviewers: GPT-6.1 Sol, ~125</text>
+<text x="217.0" y="609.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">pre-submit rules and integrity, kernel correctness,</text>
+<text x="217.0" y="626.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">audits, public-source sweeps</text>
+<rect x="435" y="560" width="370" height="86" rx="8" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="435" y="560" width="5" height="86" rx="2.5" fill="#1F9AA8"/>
+<text x="622.0" y="590.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Scouts and a debugger</text>
+<text x="622.0" y="609.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">~25 Haiku scouts (research moved to Sol),</text>
+<text x="622.0" y="626.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">1 debugger for failed trials</text>
+<rect x="840" y="560" width="370" height="86" rx="8" fill="#FBEAED" stroke="#D1495B" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="840" y="560" width="5" height="86" rx="2.5" fill="#D1495B"/>
+<text x="1027.0" y="590.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">The GPU pipeline</text>
+<text x="1027.0" y="609.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">the only path to GPU time:</text>
+<text x="1027.0" y="626.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">queue, build boxes, H200s, screens</text>
+<rect x="30" y="670" width="1180" height="70" rx="10" fill="#F4F6F9" stroke="#C9D1DB" stroke-width="1.2" opacity="1"/>
+<text x="46" y="694" font-size="13" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">Shared memory in files</text>
+<text x="46" y="718" font-size="12.5" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">RULES.md · decisions.md · judge-facts · evidence ledger · gap ledger · lever matrix · handoff notes · receipts (24 GB) · git: 2,219 commits on 188 branches</text>
+</svg>

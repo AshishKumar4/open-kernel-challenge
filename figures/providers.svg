@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 470" width="1240" height="470" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="GPU providers over time">
+<title>GPU providers over time</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="470" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">Where the GPUs came from, and what each cost</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Bars are rental periods; red ticks are Nebius preemptions.</text>
+<line x1="250.0" y1="80" x2="250.0" y2="330" stroke="#EDF0F4"/>
+<text x="254.0" y="86" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="start" opacity="1">Nov 2</text>
+<line x1="454.0" y1="80" x2="454.0" y2="330" stroke="#EDF0F4"/>
+<text x="458.0" y="86" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="start" opacity="1">Nov 3</text>
+<line x1="658.0" y1="80" x2="658.0" y2="330" stroke="#EDF0F4"/>
+<text x="662.0" y="86" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="start" opacity="1">Nov 4</text>
+<line x1="862.0" y1="80" x2="862.0" y2="330" stroke="#EDF0F4"/>
+<text x="866.0" y="86" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="start" opacity="1">Nov 5</text>
+<text x="30" y="118" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">RunPod H200 SXM</text>
+<rect x="292.925" y="104" width="20.82499999999999" height="20" rx="4" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1.2" opacity="1"/>
+<text x="945" y="119" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">$5.29/h, about $12.5</text>
+<text x="30" y="156" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">Lium H200 (container)</text>
+<rect x="336.275" y="142" width="85.42500000000001" height="20" rx="4" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1.2" opacity="1"/>
+<text x="945" y="157" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">$3.75/h, $38.52</text>
+<text x="30" y="194" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">Modal H200 (profiles)</text>
+<rect x="309.5" y="180" width="450.5" height="20" rx="4" fill="#F4F6F9" stroke="#5B6573" stroke-width="1.2" stroke-dasharray="4 3" opacity="1"/>
+<text x="945" y="195" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">per second, $49.52</text>
+<text x="30" y="232" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">Vast.ai H200 SXM</text>
+<rect x="386.0" y="218" width="113.61666666666667" height="20" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="501.6" y="218" width="350.19999999999993" height="20" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<rect x="888.9166666666667" y="218" width="38.25" height="20" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="945" y="233" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">$3.02/GPU-h on demand, $395.64+</text>
+<text x="30" y="270" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">Vast.ai CPU build boxes</text>
+<rect x="556.1416666666667" y="256" width="371.0250000000001" height="20" rx="4" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<text x="945" y="271" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">under $0.50/h combined</text>
+<text x="30" y="308" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">Nebius H200 SXM spot</text>
+<rect x="840.1833333333334" y="294" width="86.98333333333335" height="20" rx="4" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.2" opacity="1"/>
+<text x="945" y="309" font-size="12" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">spot, $2.50/GPU-h cap, about $35 to $43</text>
+<line x1="857.3" y1="291" x2="857.3" y2="317" stroke="#D1495B" stroke-width="2"/>
+<line x1="860.3" y1="291" x2="860.3" y2="317" stroke="#D1495B" stroke-width="2"/>
+<line x1="860.7" y1="291" x2="860.7" y2="317" stroke="#D1495B" stroke-width="2"/>
+<line x1="866.0" y1="291" x2="866.0" y2="317" stroke="#D1495B" stroke-width="2"/>
+<line x1="876.5" y1="291" x2="876.5" y2="317" stroke="#D1495B" stroke-width="2"/>
+<line x1="877.0" y1="291" x2="877.0" y2="317" stroke="#D1495B" stroke-width="2"/>
+<line x1="878.9" y1="291" x2="878.9" y2="317" stroke="#D1495B" stroke-width="2"/>
+<line x1="882.0" y1="291" x2="882.0" y2="317" stroke="#D1495B" stroke-width="2"/>
+<line x1="922.3" y1="291" x2="922.3" y2="317" stroke="#D1495B" stroke-width="2"/>
+<line x1="922.9" y1="291" x2="922.9" y2="317" stroke="#D1495B" stroke-width="2"/>
+<text x="30" y="360" font-size="12.5" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">Nebius spot H200, the week before: share of 15-minute slots at or under a price (cheapest of 3 regions)</text>
+<rect x="30" y="374" width="44.0" height="24" rx="4" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.2" opacity="1"/>
+<text x="36" y="391" font-size="12" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">up to $1.00: 20%</text>
+<rect x="266" y="374" width="88.0" height="24" rx="4" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.2" opacity="1"/>
+<text x="272" y="391" font-size="12" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">up to $1.50: 40%</text>
+<rect x="502" y="374" width="134.2" height="24" rx="4" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.2" opacity="1"/>
+<text x="508" y="391" font-size="12" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">up to $2.00: 61%</text>
+<rect x="738" y="374" width="158.4" height="24" rx="4" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.2" opacity="1"/>
+<text x="744" y="391" font-size="12" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">up to $2.50: 72%</text>
+<rect x="974" y="374" width="180.4" height="24" rx="4" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.2" opacity="1"/>
+<text x="980" y="391" font-size="12" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">up to $3.00: 82%</text>
+<text x="30" y="426" font-size="11.5" fill="#5B6573" font-weight="400" text-anchor="start" font-style="italic" opacity="1">Sub-$1 slots clustered at 00:00 to 07:00 UTC. We ran under a $2.50 cap; the spot price at the switch was $1.60 in eu-north1.</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 420" width="1240" height="420" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="One cost-model coefficient flips the e-graph&#x27;s answer">
+<title>One cost-model coefficient flips the e-graph&#x27;s answer</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="420" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">One coefficient in the cost model flipped the e-graph&#x27;s answer</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">egglog saturation of the layer&#x27;s front half (33 rewrite rules), then exact extraction. Bytes streamed per token.</text>
+<text x="30" y="106" font-size="13" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">early bytes free (EARLY_W = 0)</text>
+<rect x="330" y="90" width="164.05" height="26" rx="4" fill="#FBEAED" stroke="#D1495B" stroke-width="1.2" opacity="1"/>
+<text x="338" y="108" font-size="11.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">after attention 19.3 MB</text>
+<rect x="498.05" y="90" width="498.95000000000005" height="26" rx="4" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<text x="506.05" y="108" font-size="11.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">under attention 58.7 MB</text>
+<text x="30" y="130" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">extracts the hoisted pooler/router: stream the input-only terms while attention runs</text>
+<text x="30" y="186" font-size="13" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">early bytes charged (EARLY_W = 1)</text>
+<rect x="330" y="170" width="606.05" height="26" rx="4" fill="#FBEAED" stroke="#D1495B" stroke-width="1.2" opacity="1"/>
+<text x="338" y="188" font-size="11.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">after attention 71.3 MB</text>
+<text x="30" y="210" font-size="12" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">extracts production&#x27;s own form; the back half too (50.3 MB, found by the MILP; greedy DAG extraction gave 75.5)</text>
+<rect x="30" y="250" width="1180" height="140" rx="10" fill="#F4F6F9" stroke="#C9D1DB" stroke-width="1.2" opacity="1"/>
+<text x="48" y="276" font-size="13.5" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">What the H200 said about the first answer</text>
+<text x="48" y="300" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">hoisted pooler/router v1: 0.9386 of production; v2 on production&#x27;s geometry: 0.9742; both 12/12 correct</text>
+<text x="48" y="322" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">at decode-1 sliding, attention stretched from 6.8 to 11.7 µs: the &#x27;idle&#x27; HBM under latency-bound attention is idle only until something uses it</text>
+<text x="48" y="344" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">the same contention killed a gate hoist (-5% at decode 1) and every cross-kernel prefetch we tried (-1 to -13%)</text>
+<text x="48" y="370" font-size="12.5" fill="#5B6573" font-weight="400" text-anchor="start" font-style="italic" opacity="1">With the measured cost, the search correctly predicted that no linear rewrite of the dense algebra had a byte cut left.</text>
+</svg>

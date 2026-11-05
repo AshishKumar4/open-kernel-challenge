@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 660" width="1240" height="660" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="Rules tuned by failures">
+<title>Rules tuned by failures</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="660" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">Each rule was a fix for something that went wrong</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Left: what happened. Right: the rule that came out of it. The last five became notes/RULES.md on Nov 5.</text>
+<text x="30" y="106" font-size="12.5" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">Oct 31</text>
+<rect x="96" y="88" width="500" height="30" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="108" y="108" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">the first lane spawned helper agents to write code</text>
+<path d="M600,103 L632,103" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="636" y="88" width="584" height="30" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="648" y="108" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">experts write all their own code; helpers only review, scout, debug</text>
+<text x="30" y="146" font-size="12.5" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">Nov 1</text>
+<rect x="96" y="128" width="500" height="30" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="108" y="148" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">agents ran builds on my PC; it ran out of memory three times</text>
+<path d="M600,143 L632,143" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="636" y="128" width="584" height="30" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="648" y="148" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">my PC runs no compute</text>
+<text x="30" y="186" font-size="12.5" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">Nov 1</text>
+<rect x="96" y="168" width="500" height="30" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="108" y="188" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">kept a 2x accuracy margin &quot;to be safe&quot;</text>
+<path d="M600,183 L632,183" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="636" y="168" width="584" height="30" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="648" y="188" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">spend the whole accuracy budget: worst of 50+ seeds under the gate</text>
+<text x="30" y="226" font-size="12.5" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">Nov 1</text>
+<rect x="96" y="208" width="500" height="30" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="108" y="228" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">probing one idea at a time, A/B on the judge</text>
+<path d="M600,223 L632,223" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="636" y="208" width="584" height="30" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="648" y="228" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">build everything first, then test once; no A/B</text>
+<text x="30" y="266" font-size="12.5" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">Nov 2</text>
+<rect x="96" y="248" width="500" height="30" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="108" y="268" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">asserts and validation in the timed path</text>
+<path d="M600,263 L632,263" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="636" y="248" width="584" height="30" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="648" y="268" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">no asserts, bounds or validation in timed code</text>
+<text x="30" y="306" font-size="12.5" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">Nov 2</text>
+<rect x="96" y="288" width="500" height="30" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="108" y="308" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">two providers running the same jobs</text>
+<path d="M600,303 L632,303" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="636" y="288" width="584" height="30" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="648" y="308" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">one validation is enough</text>
+<text x="30" y="346" font-size="12.5" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">Nov 3</text>
+<rect x="96" y="328" width="500" height="30" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="108" y="348" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">tests before every bench</text>
+<path d="M600,343 L632,343" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="636" y="328" width="584" height="30" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="648" y="348" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">the bench&#x27;s own checks are the test</text>
+<text x="30" y="386" font-size="12.5" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">Nov 3</text>
+<rect x="96" y="368" width="500" height="30" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="108" y="388" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">pipeline &#x27;improvements&#x27; caused a 3-hour outage</text>
+<path d="M600,383 L632,383" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="636" y="368" width="584" height="30" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="648" y="388" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">pipeline frozen unless a critical bug</text>
+<text x="30" y="426" font-size="12.5" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">Nov 3</text>
+<rect x="96" y="408" width="500" height="30" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="108" y="428" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">incumbent re-run again and again</text>
+<path d="M600,423 L632,423" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="636" y="408" width="584" height="30" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="648" y="428" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">one 200-rep screen per idea, one 400-rep confirmation</text>
+<text x="30" y="466" font-size="12.5" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">Nov 4</text>
+<rect x="96" y="448" width="500" height="30" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="108" y="468" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">a blocking question while I was away: 2.4 h idle</text>
+<path d="M600,463 L632,463" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="636" y="448" width="584" height="30" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="648" y="468" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">when I&#x27;m away: decide, act, report how to undo</text>
+<text x="30" y="506" font-size="12.5" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">Nov 4</text>
+<rect x="96" y="488" width="500" height="30" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="108" y="508" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">soaks, gates, side-by-sides on every incumbent</text>
+<path d="M600,503 L632,503" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="636" y="488" width="584" height="30" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="648" y="508" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">validation only for the file being submitted</text>
+<text x="30" y="546" font-size="12.5" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">Nov 5</text>
+<rect x="96" y="528" width="500" height="30" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1" opacity="1"/>
+<text x="108" y="548" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">ideas dropped as &#x27;not doable tonight&#x27;</text>
+<path d="M600,543 L632,543" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="636" y="528" width="584" height="30" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="648" y="548" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">never estimate on human timescales (RULES.md)</text>
+<text x="30" y="598" font-size="12.5" fill="#5B6573" font-weight="400" text-anchor="start" font-style="italic" opacity="1">The rulebook stayed short on purpose: the challenge had no general process document, and most failures came from adding process, not from missing it.</text>
+</svg>

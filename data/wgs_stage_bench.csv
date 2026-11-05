@@ -1,0 +1,4 @@
+tokens,full_clk,wgmma_only_clk,alu_only_clk,four_abuf_wait2_clk,fa3_pingpong_clk,dq4_cut64_clk
+8,1503,832,1199,1492,1705,1220
+32,1909,1024,1199,1914,2661,1631
+64,2492,2048,1199,2488,2583,2223

@@ -1,0 +1,8 @@
+load,experts (MoE),projections,attention,"glue, routing, norms"
+decode 1,36.5,49.6,8.4,5.5
+decode 16,46.4,30.4,17.1,6.1
+decode 32,40.7,28.1,25.8,5.5
+verify 1,52.5,32.6,7.4,7.5
+verify 16,52.7,25.0,12.2,10.1
+verify 32,55.9,23.2,16.2,4.7
+mean of loads,47.4,31.5,14.5,6.5

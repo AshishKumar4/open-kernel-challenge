@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 560" width="1240" height="560" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="The decode layer as a kernel chain">
+<title>The decode layer as a kernel chain</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="560" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">The decode layer: a chain of kernels</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Dispatch by token count T (1, 8, 16, 32, 128, 256). Up to T = 128 the kernels are linked by PDL and prefetch weights before waiting; at 256, PDL is off.</text>
+<text x="24" y="100" font-size="11.5" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">PDL edges: the next kernel&#x27;s prologue and weight prefetch overlap the previous kernel&#x27;s tail</text>
+<rect x="24" y="112" width="214" height="84" rx="8" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="24" y="112" width="5" height="84" rx="2.5" fill="#2F6FDE"/>
+<text x="133.0" y="141.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">QKV projection</text>
+<text x="133.0" y="160.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">sk2: 12-bit GEMV, T &lt;= 32</text>
+<text x="133.0" y="177.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">rq: 12-bit GEMM, T &gt;= 128</text>
+<rect x="268" y="112" width="214" height="84" rx="8" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="268" y="112" width="5" height="84" rx="2.5" fill="#7C5CC4"/>
+<text x="377.0" y="141.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Attention</text>
+<text x="377.0" y="160.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">split-KV over FP8 pages</text>
+<text x="377.0" y="177.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">QK-norm, RoPE, cache write</text>
+<path d="M240,154.0 L266,154.0" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="512" y="112" width="214" height="84" rx="8" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="512" y="112" width="5" height="84" rx="2.5" fill="#2F6FDE"/>
+<text x="621.0" y="150.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">O projection</text>
+<text x="621.0" y="169.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">sk2 GEMV</text>
+<path d="M484,154.0 L510,154.0" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="756" y="112" width="214" height="84" rx="8" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="756" y="112" width="5" height="84" rx="2.5" fill="#E0A030"/>
+<text x="865.0" y="141.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Boundary</text>
+<text x="865.0" y="160.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">residual + RMSNorm</text>
+<text x="865.0" y="177.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">thread-block cluster</text>
+<path d="M728,154.0 L754,154.0" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="1000" y="112" width="214" height="84" rx="8" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="1000" y="112" width="5" height="84" rx="2.5" fill="#2F6FDE"/>
+<text x="1109.0" y="150.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Pooler + router</text>
+<text x="1109.0" y="169.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">one sk2 launch</text>
+<path d="M972,154.0 L998,154.0" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="24" y="236" width="214" height="84" rx="8" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="24" y="236" width="5" height="84" rx="2.5" fill="#E0A030"/>
+<text x="133.0" y="265.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Routing</text>
+<text x="133.0" y="284.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">top-8 of 256</text>
+<text x="133.0" y="301.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">sigmoid + bias, 32 local</text>
+<rect x="268" y="236" width="214" height="84" rx="8" fill="#FBEAED" stroke="#D1495B" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="268" y="236" width="5" height="84" rx="2.5" fill="#D1495B"/>
+<text x="377.0" y="265.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Experts</text>
+<text x="377.0" y="284.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">NVFP4 SwiGLU, persistent</text>
+<text x="377.0" y="301.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">tiny / small / mid / WGS</text>
+<path d="M240,278.0 L266,278.0" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="512" y="236" width="214" height="84" rx="8" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="512" y="236" width="5" height="84" rx="2.5" fill="#2F6FDE"/>
+<text x="621.0" y="274.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Unpooler</text>
+<text x="621.0" y="293.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">sk2 GEMV</text>
+<path d="M484,278.0 L510,278.0" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="756" y="236" width="214" height="84" rx="8" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="756" y="236" width="5" height="84" rx="2.5" fill="#E0A030"/>
+<text x="865.0" y="274.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Finish</text>
+<text x="865.0" y="293.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">residual + norm, outputs</text>
+<path d="M728,278.0 L754,278.0" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<path d="M1107.0,196 L1107.0,216 L131.0,216 L131.0,234" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<text x="24" y="362" font-size="14" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">Where the GPU time goes in our best run (judge profile, 46 sliding + 16 full per load, mean of the 6 loads)</text>
+<rect x="24" y="376" width="561.06" height="34" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1.2" opacity="1"/>
+<text x="34" y="398" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">experts (MoE)  47%</text>
+<rect x="588.06" y="376" width="371.85" height="34" rx="6" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="598.06" y="398" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">projections  32%</text>
+<rect x="962.91" y="376" width="169.55" height="34" rx="6" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.2" opacity="1"/>
+<text x="972.91" y="398" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">attention  14%</text>
+<rect x="1135.46" y="376" width="74.35" height="34" rx="6" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<text x="1145.46" y="398" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">glue 6%</text>
+<text x="24" y="432" font-size="11.5" fill="#5B6573" font-weight="400" text-anchor="start" font-style="italic" opacity="1">The MoE share runs from 37% (decode 1) to 56% (verify 32); projections from 50% (decode 1) to 23%. Profile kernel times come from a separate profiling pass.</text>
+<rect x="24" y="462" width="1190" height="70" rx="10" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1.2" opacity="1"/>
+<text x="40" y="488" font-size="14" fill="#1B2430" font-weight="650" text-anchor="start" opacity="1">HBM3e to SMs: the layer is a weight stream</text>
+<text x="40" y="511" font-size="12.5" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">BF16 projections read through a lossless 12-bit code; experts are NVFP4 (28.3 MB each). Measured plateau 4.58 to 4.70 TB/s with at least 48 KB in flight per SM.</text>
+</svg>

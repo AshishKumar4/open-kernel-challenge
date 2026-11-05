@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 360" width="1240" height="360" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="From candidates to a board row">
+<title>From candidates to a board row</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="360" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">From 6,722 candidates to one board row</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Counts from the pipeline&#x27;s receipts; bar width is log scale.</text>
+<text x="286" y="110" font-size="13.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">screened (200 reps)</text>
+<rect x="300" y="90" width="680.0" height="32" rx="6" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="312" y="112" font-size="15" fill="#2F6FDE" font-weight="750" text-anchor="start" opacity="1">6,722</text>
+<text x="994.0" y="111" font-size="12.5" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">by 02:35 UTC, Nov 5</text>
+<text x="286" y="162" font-size="13.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">confirmations queued (400 reps)</text>
+<rect x="300" y="142" width="547.9492574948563" height="32" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.2" opacity="1"/>
+<text x="312" y="164" font-size="15" fill="#2A9D6F" font-weight="750" text-anchor="start" opacity="1">1,090</text>
+<text x="861.9492574948563" y="163" font-size="12.5" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">1,031 read: 636 within noise, 364 behind, 28 ahead</text>
+<text x="286" y="214" font-size="13.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">incumbent promotions</text>
+<rect x="300" y="194" width="343.1340083824452" height="32" rx="6" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.2" opacity="1"/>
+<text x="312" y="216" font-size="15" fill="#2A9D6F" font-weight="750" text-anchor="start" opacity="1">64</text>
+<text x="657.1340083824452" y="215" font-size="12.5" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Nov 3 to the close, each a confirmed, stacked change</text>
+<text x="286" y="266" font-size="13.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">scored decode runs on record</text>
+<rect x="300" y="246" width="264.4641017675007" height="32" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1.2" opacity="1"/>
+<text x="312" y="268" font-size="15" fill="#D1495B" font-weight="750" text-anchor="start" opacity="1">21</text>
+<text x="578.4641017675008" y="267" font-size="12.5" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">after the port; 11 of them in the last 10 minutes</text>
+<text x="286" y="318" font-size="13.5" fill="#1B2430" font-weight="600" text-anchor="end" opacity="1">board row</text>
+<rect x="300" y="298" width="90.33468857990741" height="32" rx="6" fill="#FBEAED" stroke="#D1495B" stroke-width="1.2" opacity="1"/>
+<text x="312" y="320" font-size="15" fill="#D1495B" font-weight="750" text-anchor="start" opacity="1">1</text>
+<text x="404.3346885799074" y="319" font-size="12.5" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">2.342×, 9,659.4 µs</text>
+</svg>

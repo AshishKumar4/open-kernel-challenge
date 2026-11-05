@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 560" width="1240" height="560" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="What the Lean model covers">
+<title>What the Lean model covers</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="560" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">The Lean model: what it covers, and how far to trust each part</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Green: kernel-checked proofs. Amber: calibrated against measurements. Red: known gaps.</text>
+<rect x="20" y="76" width="590" height="420" rx="12" fill="none" stroke="#C9D1DB" stroke-width="1.2" stroke-dasharray="5 4" opacity="1"/>
+<text x="34" y="96" font-size="11" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">CORRECTNESS</text>
+<rect x="630" y="76" width="590" height="420" rx="12" fill="none" stroke="#C9D1DB" stroke-width="1.2" stroke-dasharray="5 4" opacity="1"/>
+<text x="644" y="96" font-size="11" fill="#5B6573" font-weight="700" text-anchor="start" opacity="1">TIMING</text>
+<rect x="40" y="116" width="550" height="60" rx="8" fill="#F4F6F9" stroke="#5B6573" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="40" y="116" width="5" height="60" rx="2.5" fill="#5B6573"/>
+<text x="317.0" y="142.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">PTX ISA 9.4, chapter 8</text>
+<text x="317.0" y="161.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">the source of truth, then microbenchmarks</text>
+<rect x="40" y="190" width="550" height="60" rx="8" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="40" y="190" width="5" height="60" rx="2.5" fill="#2A9D6F"/>
+<text x="317.0" y="216.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Axiomatic memory model</text>
+<text x="317.0" y="235.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">well-formedness + the five §8.10 axioms</text>
+<path d="M315,174 L315,188" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="40" y="264" width="550" height="60" rx="8" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="40" y="264" width="5" height="60" rx="2.5" fill="#2A9D6F"/>
+<text x="317.0" y="290.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">mbarrier and named barriers</text>
+<text x="317.0" y="309.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">phases, tx counts, parity, faults</text>
+<path d="M315,248 L315,262" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="40" y="338" width="550" height="60" rx="8" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="40" y="338" width="5" height="60" rx="2.5" fill="#2A9D6F"/>
+<text x="317.0" y="364.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Protocols as transition systems</text>
+<text x="317.0" y="383.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">TMA ring, split-KV merge, warp joins</text>
+<path d="M315,322 L315,336" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="40" y="412" width="550" height="60" rx="8" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="40" y="412" width="5" height="60" rx="2.5" fill="#2A9D6F"/>
+<text x="317.0" y="438.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Theorems</text>
+<text x="317.0" y="457.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">ring_safe, merge_sees, 4 bugs replayed as traces</text>
+<path d="M315,396 L315,410" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="650" y="116" width="550" height="60" rx="8" fill="#F4F6F9" stroke="#5B6573" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="650" y="116" width="5" height="60" rx="2.5" fill="#5B6573"/>
+<text x="927.0" y="142.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">SASS control bits</text>
+<text x="927.0" y="161.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">17 builds extracted with cuobjdump</text>
+<rect x="650" y="190" width="550" height="60" rx="8" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="650" y="190" width="5" height="60" rx="2.5" fill="#E0A030"/>
+<text x="927.0" y="216.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">SMSP issue simulator</text>
+<text x="927.0" y="235.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">stalls, scoreboards, pipes, round robin</text>
+<path d="M925,174 L925,188" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="650" y="264" width="550" height="60" rx="8" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="650" y="264" width="5" height="60" rx="2.5" fill="#E0A030"/>
+<text x="927.0" y="290.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">HBM / TMA delivery</text>
+<text x="927.0" y="309.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">latency + bytes/share, 571-cycle issuer</text>
+<path d="M925,248 L925,262" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="650" y="338" width="550" height="60" rx="8" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="650" y="338" width="5" height="60" rx="2.5" fill="#E0A030"/>
+<text x="927.0" y="364.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">MoE end to end, floors</text>
+<text x="927.0" y="383.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">per-kernel and whole-layer bounds</text>
+<path d="M925,322 L925,336" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="650" y="412" width="550" height="60" rx="8" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.3" filter="url(#lift)" opacity="1"/>
+<rect x="650" y="412" width="5" height="60" rx="2.5" fill="#E0A030"/>
+<text x="927.0" y="438.0" font-size="15" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">Validation</text>
+<text x="927.0" y="457.0" font-size="12" fill="#5B6573" font-weight="400" text-anchor="middle" opacity="1">28/30 rates ±10%, 45/45 latencies ±20%</text>
+<path d="M925,396 L925,410" fill="none" stroke="#1B2430" stroke-width="1.6" marker-end="url(#arr-ink)" stroke-linejoin="round"/>
+<rect x="40" y="510" width="560" height="40" rx="8" fill="#FBEAED" stroke="#D1495B" stroke-width="1.2" stroke-dasharray="5 4" opacity="1"/>
+<text x="56" y="535" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">not proved: the operational ring refines the axiomatic model</text>
+<rect x="650" y="510" width="560" height="40" rx="8" fill="#FBEAED" stroke="#D1495B" stroke-width="1.2" stroke-dasharray="5 4" opacity="1"/>
+<text x="666" y="535" font-size="12.5" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">not modelled: synchronization under load (MoE kernels read 16% fast)</text>
+<rect x="250" y="86.5" width="336.15999999999997" height="20.5" rx="10.25" fill="#E4F4EE" stroke="#2A9D6F" stroke-width="1" opacity="1"/>
+<text x="418.08" y="102" font-size="11.5" fill="#2A9D6F" font-weight="600" text-anchor="middle" opacity="1">Alloy cross-check: 144 commands, 0 disagreements</text>
+</svg>

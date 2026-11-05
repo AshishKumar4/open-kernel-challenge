@@ -1,0 +1,15 @@
+time_utc,file,geomean_vs_production
+2026-11-03T15:12,gbest2xg,1.0167
+2026-11-03T19:30,dbt_shapetheory2,1.0207
+2026-11-03T23:51,clean rewrite,1.0236
+2026-11-04T01:13,v16split11,1.0216
+2026-11-04T02:22,wf_bf16p,1.0245
+2026-11-04T09:32,study point,1.0261
+2026-11-04T12:22,composite2,1.0270
+2026-11-04T14:06,hcred3b,1.0272
+2026-11-04T20:21,iwarp_all,1.0288
+2026-11-05T01:34,epoch_f,1.0292
+2026-11-05T02:30,bundle3 (verify-attention ports),1.0341
+2026-11-05T03:16,stack3 (router sum + MoE y-keep),1.0406
+2026-11-05T04:09,bundle8,1.0419
+2026-11-05T06:56,rlxpoll1_r5 (final),1.0411

@@ -1,0 +1,8 @@
+== 1 right-moving source + 0 IMAD.SHL (<= 31), 4 LOP3 (chained allowed): 0 solutions
+== 1 right-moving source + 1 IMAD.SHL (<= 31), 4 LOP3 (chained allowed): 0 solutions
+== 1 right-moving source + 2 IMAD.SHL (<= 31), 4 LOP3 (chained allowed): 0 solutions
+== 1 right-moving source + 3 IMAD.SHL (<= 31), 4 LOP3 (chained allowed): 0 solutions
+
+real	8m24.133s
+user	41m55.881s
+sys	0m13.784s

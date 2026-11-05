@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 652" width="1240" height="652" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="Expert lanes over time">
+<title>Expert lanes over time</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="652" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">Who was working when</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">One bar per expert lane (Opus blue, Astra violet). Ticks: EAT rounds, PC restarts, pipeline outages.</text>
+<line x1="449.6" y1="90" x2="449.6" y2="602" stroke="#EDF0F4"/>
+<text x="453.6296296296296" y="86" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="start" opacity="1">Nov 1</text>
+<line x1="627.4" y1="90" x2="627.4" y2="602" stroke="#EDF0F4"/>
+<text x="631.4074074074074" y="86" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="start" opacity="1">Nov 2</text>
+<line x1="805.2" y1="90" x2="805.2" y2="602" stroke="#EDF0F4"/>
+<text x="809.1851851851852" y="86" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="start" opacity="1">Nov 3</text>
+<line x1="983.0" y1="90" x2="983.0" y2="602" stroke="#EDF0F4"/>
+<text x="986.9629629629629" y="86" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="start" opacity="1">Nov 4</text>
+<line x1="1160.7" y1="90" x2="1160.7" y2="602" stroke="#EDF0F4"/>
+<text x="1164.7407407407409" y="86" font-size="11.5" fill="#5B6573" font-weight="600" text-anchor="start" opacity="1">Nov 5</text>
+<text x="30" y="120" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">Operator: kernels, base build, queue, study, releases</text>
+<rect x="426.5432098765432" y="107" width="790.7407407407409" height="18" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="30" y="154" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">Alternative small-MoE architecture, routing fix</text>
+<rect x="678.5185185185185" y="141" width="153.33333333333337" height="18" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="30" y="188" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">Competing streaming MoE, then attention lead and per-shape</text>
+<rect x="736.2962962962963" y="175" width="482.3456790123457" height="18" rx="4" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.2" opacity="1"/>
+<text x="30" y="222" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">Algebra and reformulation (FP4 decode search)</text>
+<rect x="767.9012345679013" y="209" width="124.81481481481478" height="18" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="30" y="256" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">Fresh large-load MoE</text>
+<rect x="831.7283950617284" y="243" width="342.09876543209884" height="18" rx="4" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.2" opacity="1"/>
+<text x="30" y="290" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">EAT-style lane: projections, glue, codecs</text>
+<rect x="832.962962962963" y="277" width="339.506172839506" height="18" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="30" y="324" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">Evidence and study design</text>
+<rect x="835.0617283950617" y="311" width="8.765432098765586" height="18" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="30" y="358" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">Clean rewrite of the best file</text>
+<rect x="955.3086419753087" y="345" width="73.82716049382714" height="18" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="30" y="392" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">Lean 4 model of PTX and the H200</text>
+<rect x="999.0123456790124" y="379" width="135.18518518518533" height="18" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="30" y="426" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">ptxas reverse engineering</text>
+<rect x="1014.5679012345679" y="413" width="58.76543209876559" height="18" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="30" y="460" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">Big-MoE synchronization and imbalance</text>
+<rect x="1021.9753086419753" y="447" width="152.71604938271616" height="18" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="30" y="494" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">Moonshot design for the big MoE</text>
+<rect x="1127.9012345679012" y="481" width="45.18518518518522" height="18" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="30" y="528" font-size="12" fill="#1B2430" font-weight="500" text-anchor="start" opacity="1">19 fresh-attempt agents, ~90 min or 3 attempts each</text>
+<rect x="1171.7283950617284" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1173.8791423001949" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1176.0298895386616" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1178.180636777128" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1180.3313840155945" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1182.4821312540612" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1184.6328784925277" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1186.7836257309941" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1188.9343729694608" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1191.0851202079273" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1193.2358674463937" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1195.3866146848602" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1197.537361923327" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1199.6881091617934" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1201.8388564002598" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1203.9896036387265" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1206.140350877193" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1208.2910981156595" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1210.4418453541261" y="515" width="4" height="18" rx="1" fill="#2F6FDE" stroke="none" stroke-width="1.2" opacity="1"/>
+<path d="M833.2,554 l-5,10 l10,0 z" fill="#E0A030"/>
+<path d="M841.7,554 l-5,10 l10,0 z" fill="#E0A030"/>
+<path d="M911.5,554 l-5,10 l10,0 z" fill="#E0A030"/>
+<path d="M940.1,554 l-5,10 l10,0 z" fill="#E0A030"/>
+<path d="M1066.9,554 l-5,10 l10,0 z" fill="#E0A030"/>
+<path d="M1126.7,554 l-5,10 l10,0 z" fill="#E0A030"/>
+<path d="M456.0,554 l-5,10 l10,0 z" fill="#5B6573"/>
+<path d="M474.0,554 l-5,10 l10,0 z" fill="#5B6573"/>
+<path d="M555.9,554 l-5,10 l10,0 z" fill="#5B6573"/>
+<path d="M761.4,554 l-5,10 l10,0 z" fill="#5B6573"/>
+<path d="M1002.0,554 l-5,10 l10,0 z" fill="#5B6573"/>
+<rect x="861.9753086419753" y="568" width="17.28395061728395" height="8" rx="2" fill="#D1495B" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="924.0740740740741" y="568" width="3.4567901234568126" height="8" rx="2" fill="#D1495B" stroke="none" stroke-width="1.2" opacity="1"/>
+<rect x="1092.3456790123455" y="568" width="9.62962962962979" height="8" rx="2" fill="#D1495B" stroke="none" stroke-width="1.2" opacity="1"/>
+<path d="M420,592 l-5,10 l10,0 z" fill="#E0A030"/>
+<text x="430" y="600" font-size="11.5" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">EAT round</text>
+<path d="M530,592 l-5,10 l10,0 z" fill="#5B6573"/>
+<text x="540" y="600" font-size="11.5" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">orchestrator restart (PC out of memory)</text>
+<rect x="800" y="592" width="20" height="8" rx="2" fill="#D1495B" stroke="none" stroke-width="1.2" opacity="1"/>
+<text x="826" y="600" font-size="11.5" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">pipeline outage</text>
+</svg>

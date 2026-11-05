@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 250" width="1240" height="250" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="The Hopper SASS control word">
+<title>The Hopper SASS control word</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="250" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">Reading ptxas&#x27;s schedule from the SASS control bits</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Each 128-bit instruction&#x27;s high word carries its scheduling decisions (decoded by harness/ptxas/ctl.py).</text>
+<rect x="30.0" y="90" width="744.1999999999999" height="46" rx="4" fill="#F4F6F9" stroke="#5B6573" stroke-width="1.2" opacity="1"/>
+<text x="403.09999999999997" y="110" font-size="12" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">opcode and operand bits</text>
+<text x="403.09999999999997" y="127" font-size="11" fill="#5B6573" font-weight="500" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">0-40</text>
+<rect x="776.1999999999999" y="90" width="70.8" height="46" rx="4" fill="#FBEAED" stroke="#D1495B" stroke-width="1.2" opacity="1"/>
+<text x="812.5999999999999" y="110" font-size="12" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">stall</text>
+<text x="812.5999999999999" y="127" font-size="11" fill="#5B6573" font-weight="500" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">41-44</text>
+<rect x="849.0" y="90" width="16.2" height="46" rx="4" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<text x="858.1" y="82" font-size="12" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">yield</text>
+<text x="858.1" y="120" font-size="11" fill="#5B6573" font-weight="500" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">45</text>
+<rect x="867.1999999999999" y="90" width="52.599999999999994" height="46" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="894.4999999999999" y="110" font-size="12" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">write SB</text>
+<text x="894.4999999999999" y="127" font-size="11" fill="#5B6573" font-weight="500" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">46-48</text>
+<rect x="921.8" y="90" width="52.599999999999994" height="46" rx="4" fill="#E7EFFC" stroke="#2F6FDE" stroke-width="1.2" opacity="1"/>
+<text x="949.0999999999999" y="110" font-size="12" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">read SB</text>
+<text x="949.0999999999999" y="127" font-size="11" fill="#5B6573" font-weight="500" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">49-51</text>
+<rect x="976.4" y="90" width="107.19999999999999" height="46" rx="4" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.2" opacity="1"/>
+<text x="1031.0" y="110" font-size="12" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">wait mask</text>
+<text x="1031.0" y="127" font-size="11" fill="#5B6573" font-weight="500" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">52-57</text>
+<rect x="1085.6" y="90" width="70.8" height="46" rx="4" fill="#E2F3F5" stroke="#1F9AA8" stroke-width="1.2" opacity="1"/>
+<text x="1122.0" y="110" font-size="12" fill="#1B2430" font-weight="650" text-anchor="middle" opacity="1">reuse</text>
+<text x="1122.0" y="127" font-size="11" fill="#5B6573" font-weight="500" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" opacity="1">58-61</text>
+<rect x="1158.3999999999999" y="90" width="34.4" height="46" rx="4" fill="#F4F6F9" stroke="#5B6573" stroke-width="1.2" opacity="1"/>
+<text x="30" y="170" font-size="13" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">The stall field tops out at 15 cycles. A longer dependency is encoded as stall 15 on the producer plus a NOP carrying the rest:</text>
+<text x="30" y="196" font-size="13" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">HMMA.16816 (stall 15), then NOP (stall 9): a 24-cycle accumulator chain.   Almost every mid-function NOP is this split, not alignment padding.</text>
+<text x="30" y="226" font-size="12.5" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Dependent-issue distances read this way: 4 cycles inside the FMA or ALU group, 5 across, 6 into MUFU, 10 after HFMA2.MMA, 24 on an HMMA chain.</text>
+</svg>

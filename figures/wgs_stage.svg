@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 400" width="1240" height="400" font-family="Inter, 'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" role="img" aria-label="Decode and tensor math serialize in the big MoE">
+<title>Decode and tensor math serialize in the big MoE</title>
+<defs>
+<marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2F6FDE"/></marker>
+<marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#D1495B"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#2A9D6F"/></marker>
+<marker id="arr-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#E0A030"/></marker>
+<marker id="arr-violet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#7C5CC4"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1F9AA8"/></marker>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#1B2430"/></marker>
+<marker id="arr-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="#5B6573"/></marker>
+<filter id="lift" x="-10%" y="-10%" width="120%" height="140%"><feDropShadow dx="0" dy="1.5" stdDeviation="1.6" flood-color="#1B2430" flood-opacity="0.12"/></filter>
+</defs>
+<rect width="1240" height="400" fill="#FFFFFF"/>
+<text x="30" y="40" font-size="20" fill="#1B2430" font-weight="700" text-anchor="start" opacity="1">Big MoE: decode and tensor math run one after the other</text>
+<text x="30" y="62" font-size="13" fill="#5B6573" font-weight="400" text-anchor="start" opacity="1">Clocks per 36 KB weight stage, the real stage loop on shared-memory-resident data, 132 CTAs x 4 warpgroups.</text>
+<text x="186" y="114" font-size="13" fill="#1B2430" font-weight="650" text-anchor="end" opacity="1">8 tokens</text>
+<rect x="200" y="96" width="465.93" height="24" rx="4" fill="#FBEAED" stroke="#D1495B" stroke-width="1.2" opacity="1"/>
+<text x="675.9300000000001" y="113" font-size="12" fill="#D1495B" font-weight="700" text-anchor="start" opacity="1">measured 1503</text>
+<rect x="200" y="126" width="371.69" height="18" rx="3" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<text x="208" y="139" font-size="11" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">decode (ALU) alone 1199</text>
+<rect x="571.69" y="126" width="257.92" height="18" rx="3" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.2" opacity="1"/>
+<text x="579.69" y="139" font-size="11" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">wgmma alone 832</text>
+<rect x="200" y="150" width="371.69" height="12" rx="3" fill="none" stroke="#5B6573" stroke-width="1.2" stroke-dasharray="4 3" opacity="1"/>
+<text x="579.69" y="160" font-size="11" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">perfect overlap would be 1199</text>
+<text x="186" y="206" font-size="13" fill="#1B2430" font-weight="650" text-anchor="end" opacity="1">32 tokens</text>
+<rect x="200" y="188" width="591.79" height="24" rx="4" fill="#FBEAED" stroke="#D1495B" stroke-width="1.2" opacity="1"/>
+<text x="801.79" y="205" font-size="12" fill="#D1495B" font-weight="700" text-anchor="start" opacity="1">measured 1909</text>
+<rect x="200" y="218" width="371.69" height="18" rx="3" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<text x="208" y="231" font-size="11" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">decode (ALU) alone 1199</text>
+<rect x="571.69" y="218" width="317.44" height="18" rx="3" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.2" opacity="1"/>
+<text x="579.69" y="231" font-size="11" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">wgmma alone 1024</text>
+<rect x="200" y="242" width="371.69" height="12" rx="3" fill="none" stroke="#5B6573" stroke-width="1.2" stroke-dasharray="4 3" opacity="1"/>
+<text x="579.69" y="252" font-size="11" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">perfect overlap would be 1199</text>
+<text x="186" y="298" font-size="13" fill="#1B2430" font-weight="650" text-anchor="end" opacity="1">64 tokens</text>
+<rect x="200" y="280" width="772.52" height="24" rx="4" fill="#FBEAED" stroke="#D1495B" stroke-width="1.2" opacity="1"/>
+<text x="982.52" y="297" font-size="12" fill="#D1495B" font-weight="700" text-anchor="start" opacity="1">measured 2492</text>
+<rect x="200" y="310" width="371.69" height="18" rx="3" fill="#FCF3E1" stroke="#E0A030" stroke-width="1.2" opacity="1"/>
+<text x="208" y="323" font-size="11" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">decode (ALU) alone 1199</text>
+<rect x="571.69" y="310" width="634.88" height="18" rx="3" fill="#EFEAF9" stroke="#7C5CC4" stroke-width="1.2" opacity="1"/>
+<text x="579.69" y="323" font-size="11" fill="#1B2430" font-weight="600" text-anchor="start" opacity="1">wgmma alone 2048</text>
+<rect x="200" y="334" width="634.88" height="12" rx="3" fill="none" stroke="#5B6573" stroke-width="1.2" stroke-dasharray="4 3" opacity="1"/>
+<text x="842.88" y="344" font-size="11" fill="#5B6573" font-weight="500" text-anchor="start" opacity="1">perfect overlap would be 2048</text>
+<text x="30" y="362" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">With register-A wgmma the decoding warps also issue the MMAs. Double-buffering the A fragments at 96 registers per thread</text>
+<text x="30" y="382" font-size="12.5" fill="#1B2430" font-weight="400" text-anchor="start" opacity="1">makes ptxas insert a wait after every wgmma (C7511/C7512). Three redesigns of the big MoE lost 3 to 27%.</text>
+</svg>

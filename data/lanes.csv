@@ -1,0 +1,14 @@
+start_utc,end_utc,model,work,ended
+2026-10-31T20:53,2026-11-05T07:38,opus,"Operator: kernels, base build, queue, study, releases",ran to the close
+2026-11-02T06:54,2026-11-03T03:36,opus,"Alternative small-MoE architecture, routing fix",retired with handoff
+2026-11-02T14:42,2026-11-05T07:49,astra,"Competing streaming MoE, then attention lead and per-shape",ran to the close
+2026-11-02T18:58,2026-11-03T11:49,opus,"Algebra and reformulation (FP4 decode search)",finished and retired
+2026-11-03T03:35,2026-11-05T01:46,astra,"Fresh large-load MoE",handed off at the refresh
+2026-11-03T03:45,2026-11-05T01:35,opus,"EAT-style lane: projections, glue, codecs",handed off at the refresh
+2026-11-03T04:02,2026-11-03T05:13,opus,"Evidence and study design",folded into the operator
+2026-11-03T20:16,2026-11-04T06:14,opus,"Clean rewrite of the best file",delivered and folded
+2026-11-04T02:10,2026-11-04T20:25,opus,"Lean 4 model of PTX and the H200",folded
+2026-11-04T04:16,2026-11-04T12:12,opus,"ptxas reverse engineering",folded with the Lean lane
+2026-11-04T05:16,2026-11-05T01:53,opus,"Big-MoE synchronization and imbalance",handed off at the refresh
+2026-11-04T19:34,2026-11-05T01:40,opus,"Moonshot design for the big MoE",ended
+2026-11-05T01:29,2026-11-05T07:00,opus,"19 fresh-attempt agents, ~90 min or 3 attempts each",rotated through 5 to 7 slots

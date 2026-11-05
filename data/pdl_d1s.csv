@@ -1,0 +1,9 @@
+kernel,family,start_us,end_us
+qkv projection,proj,0.0,8.8
+attention,attn,7.0,14.1
+o projection + boundary,proj,9.3,17.9
+pooler + router,proj,17.1,33.9
+route,glue,30.2,35.4
+experts (MoE),moe,34.4,50.1
+unpooler,proj,49.0,53.3
+finish,glue,51.2,55.1
